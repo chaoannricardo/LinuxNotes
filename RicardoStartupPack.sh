@@ -6,6 +6,9 @@
 # * sudo apt-get install linux-headers-<kernal version>
 
 # Shell Script Starts
+echo "========================================================================="
+echo "========================================================================="
+echo "========================================================================="
 echo "Welcome to Ricardo's Ubuntu Start-up Package!!!"
 echo "Maintainer: Ricardo S. Chao;"
 echo "https://github.com/chaoannricardo;https://www.linkedin.com/in/chaoannricardo/"
