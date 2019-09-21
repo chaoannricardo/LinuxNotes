@@ -46,9 +46,6 @@ sudo apt-get install openssh-server -y
 sudo apt-get install dkms -y
 sudo apt-get install build-essential -y
 
-# install Notepadqq
-snap install --classic notepadqq -y
-
 # install Java jdk8
 sudo apt install openjdk-8-jdk -y
 
@@ -104,14 +101,15 @@ echo "========================================================================="
 echo "========================================================================="
 echo "Reminder List of Addtional Packages======================================"
 echo ""
-echo "1. IntelliJ"
-echo "2. Scala"
-echo "3. Pycharm"
-echo "4. Apache-Spark"
-echo "5. Apache-Hadoop"
-echo "6. idle-python3.6"
-echo "7. Apache-kafka"
-echo "8. Anaconda3"
+echo "*  Anaconda (Common Python Packages)"
+echo "*  IntelliJ (Java Editor)"
+echo "*  Scala (Spark Languange)"
+echo "*  Pycharm (Python Editor)"
+echo "*  Arduino (Arduino Editor)"
+echo "*  Apache-Spark"
+echo "*  Apache-Hadoop"
+echo "*  Apache-Kafka"
+echo "*  idle-python3.6"
 echo ""
 echo "Reminder List Ended======================================================"
 echo "Packages Installed Successfully=========================================="
