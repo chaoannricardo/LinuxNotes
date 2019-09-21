@@ -84,11 +84,16 @@ sudo apt-get install libgtk-3-dev -y
 # install mojave theme of ubuntu 
 sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf -y
 
-# install Typora
+# install Typora (https://support.typora.io/Typora-on-Linux/)
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
 sudo apt-get install typora -y
+
+# install notepadqq(https://notepadqq.com/wp/download/)
+sudo add-apt-repository ppa:notepadqq-team/notepadqq
+sudo apt-get update
+sudo apt-get install notepadqq
 
 # install GNOME (In order to customized themes of the system)
 echo "========================================================================="
