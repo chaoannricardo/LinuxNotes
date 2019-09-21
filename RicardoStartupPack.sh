@@ -6,37 +6,37 @@
 # * sudo apt-get install linux-headers-<kernal version>
 
 # Shell Script Starts
-echo "========================================================================="
-echo "========================================================================="
-echo "========================================================================="
-echo "Welcome to Ricardo's Ubuntu Start-up Package!!!"
-echo "Maintainer: Ricardo S. Chao;"
-echo "https://github.com/chaoannricardo;https://www.linkedin.com/in/chaoannricardo/"
-echo "Last Updated: 2019/09/21"
-echo "========================================================================="
-echo "========================================================================="
-echo "========================================================================="
-echo "Copyright [2019] [Ricardo S. Chao]"
-echo ""
-echo "Licensed under the Apache License, Version 2.0 (the "License");"
-echo "you may not use this file except in compliance with the License."
-echo "You may obtain a copy of the License at"
-echo ""
-echo "   http://www.apache.org/licenses/LICENSE-2.0"
-echo ""
-echo "Unless required by applicable law or agreed to in writing, software"
-echo "distributed under the License is distributed on an "AS IS" BASIS,"
-echo "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied."
-echo "See the License for the specific language governing permissions and"
-echo "limitations under the License."
-echo "========================================================================="
-echo "========================================================================="
-echo "========================================================================="
-echo "Installation Starts======================================================"
-echo ""
-echo ""
-echo ""
+echo "=========================================================================
+=========================================================================
+=========================================================================
+Welcome to Ricardo's Ubuntu Start-up Package!!!
+Maintainer: Ricardo S. Chao;
+https://github.com/chaoannricardo;https://www.linkedin.com/in/chaoannricardo/
+Last Updated: 2019/09/21"
 sleep 3
+echo "=========================================================================
+=========================================================================
+=========================================================================
+Copyright [2019] [Ricardo S. Chao]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+=========================================================================
+=========================================================================
+=========================================================================
+Installation Starts======================================================
+
+
+"
+sleep 5
 
 # update repository, upgrade packages for the first time
 sudo apt-get update
@@ -96,36 +96,36 @@ sudo apt-get update
 sudo apt-get install notepadqq
 
 # install GNOME (In order to customized themes of the system)
-echo "========================================================================="
-echo "========================================================================="
-echo "========================================================================="
-echo "Installing GNOME.....may require user to restart the system after installing the service"
-echo "Within the GNOME Set-Up process, user would be able to select customized display manager, gdm3 or lightDM. (By using tab to change option, and press enter to select.)"
-echo "Gdm3 is the default Gnome 3 desktop environment greeter. "
-echo "LightDM is a lighter and faster version of the same greeter system."
-echo "GNOME Installation Starts..."
+echo "=========================================================================
+=========================================================================
+=========================================================================
+Installing GNOME.....may require user to restart the system after installing the service
+Within the GNOME Set-Up process, user would be able to select customized display manager, gdm3 or lightDM. (By using tab to change option, and press enter to select.)
+Gdm3 is the default Gnome 3 desktop environment greeter. 
+LightDM is a lighter and faster version of the same greeter system.
+GNOME Installation Starts..."
 sleep 5
 sudo apt-get install gnome-shell ubuntu-gnome-desktop -y
 sudo apt install gnome-tweak-tool -y
-echo "========================================================================="
-echo "========================================================================="
-echo "========================================================================="
-echo "Reminder List of Addtional Packages======================================"
-echo ""
-echo "*  Mac-alike theme (Mojave) (https://github.com/vinceliuice/Mojave-gtk-theme)"
-echo "*  Rime input setup (http://shiunxun.blogspot.com/2018/04/ubuntu-1804.html)"
-echo "*  Anaconda (Common Python Packages)"
-echo "*  IntelliJ (Java Editor)"
-echo "*  Scala (Spark Languange)"
-echo "*  Pycharm (Python Editor)"
-echo "*  Arduino (Arduino Editor)"
-echo "*  Apache-Spark"
-echo "*  Apache-Hadoop"
-echo "*  Apache-Kafka"
-echo "*  idle-python3.6"
-echo ""
-echo "Reminder List Ended======================================================"
-echo "Packages Installed Successfully=========================================="
-echo "========================================================================="
-echo "========================================================================="
-echo "========================================================================="
+echo "=========================================================================
+=========================================================================
+=========================================================================
+Reminder List of Addtional Packages======================================
+
+*  Mac-alike theme (Mojave) (https://github.com/vinceliuice/Mojave-gtk-theme)
+*  Rime input setup (http://shiunxun.blogspot.com/2018/04/ubuntu-1804.html)
+*  Anaconda (Common Python Packages)
+*  IntelliJ (Java Editor)
+*  Scala (Spark Languange)
+*  Pycharm (Python Editor)
+*  Arduino (Arduino Editor)
+*  Apache-Spark
+*  Apache-Hadoop
+*  Apache-Kafka
+*  idle-python3.6
+
+Reminder List Ended======================================================
+Packages Installed Successfully==========================================
+=========================================================================
+=========================================================================
+========================================================================="
