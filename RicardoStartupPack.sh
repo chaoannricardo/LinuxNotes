@@ -95,6 +95,9 @@ sudo add-apt-repository ppa:notepadqq-team/notepadqq
 sudo apt-get update
 sudo apt-get install notepadqq
 
+# install bleachbit(CCleaner for Ubuntu)
+sudo apt-get install bleachbit -y
+
 # install GNOME (In order to customized themes of the system)
 echo "=========================================================================
 =========================================================================
