@@ -5,6 +5,8 @@
 # * uname -r 
 # * sudo apt-get install linux-headers-<kernal version>
 # * sudo apt-get install open-vm-tools
+# * sudo apt-get install open-vm-tools-desktop
+# * reboot
 # ======== To to fix window resize isssue ========
 # * sudo vi /lib/systemd/system/open-vm-tools.service
 # Add under [Unit] the following line:
