@@ -21,7 +21,7 @@ echo "=========================================================================
 Welcome to Ricardo's Ubuntu Start-up Package!!!
 Maintainer: Ricardo S. Chao;
 https://github.com/chaoannricardo;https://www.linkedin.com/in/chaoannricardo/
-Last Updated: 2019/09/24"
+Last Updated: 2019/10/05"
 sleep 3
 echo "=========================================================================
 =========================================================================
