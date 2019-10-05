@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Pre-executed Procedure
 # * sudo apt-get update
 # * sudo apt-get upgrade
@@ -119,6 +120,32 @@ GNOME Installation Starts..."
 sleep 5
 sudo apt-get install gnome-shell ubuntu-gnome-desktop -y
 sudo apt install gnome-tweak-tool -y
+
+# Create Installation log
+echo "# Packages Installed:
+* openssh-server
+* dkms
+* build-essential
+* openjdk-8-jdk
+* python3-pip
+* numpy
+* pandas
+* scikit-learn
+* matplotlib
+* git
+* ssh -T git@github.com
+* ibus-rime
+* libgtk2.0-dev
+* libgtk-3-dev
+* gtk2-engines-murrine 
+* gtk2-engines-pixbuf
+* typora
+* notepadqq
+* bleachbit
+* gnome-tweak-tool
+* gnome-shell ubuntu-gnome-desktop" > RicardoInstallationLog.md
+
+# Installation ended, create reminder list
 echo "=========================================================================
 =========================================================================
 =========================================================================
