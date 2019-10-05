@@ -4,6 +4,7 @@
 # * sudo apt-get upgrade
 # * uname -r 
 # * sudo apt-get install linux-headers-<kernal version>
+# * sudo apt-get install open-vm-tools
 
 # Shell Script Starts
 echo "=========================================================================
