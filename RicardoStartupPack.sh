@@ -3,7 +3,7 @@
 # Pre-executed Procedure
 # * sudo apt-get update
 # * sudo apt-get upgrade
-# * uname -r 
+# * uname -r
 # * sudo apt-get install linux-headers-<kernal version>
 # * sudo apt-get install open-vm-tools
 # * sudo apt-get install open-vm-tools-desktop
