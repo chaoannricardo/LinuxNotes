@@ -22,7 +22,7 @@ echo "=========================================================================
 Welcome to Ricardo's Ubuntu Start-up Package!!!
 Maintainer: Ricardo S. Chao;
 https://github.com/chaoannricardo;https://www.linkedin.com/in/chaoannricardo/
-Last Updated: 2019/10/05"
+Last Updated: 2019/10/07"
 sleep 3
 echo "=========================================================================
 =========================================================================
@@ -122,7 +122,23 @@ sudo apt-get install gnome-shell ubuntu-gnome-desktop -y
 sudo apt install gnome-tweak-tool -y
 
 # Create Installation log
-echo "# Packages Installed:
+echo " # Pre-executed Procedure
+* sudo apt-get update
+* sudo apt-get upgrade
+* uname -r 
+* sudo apt-get install linux-headers-<kernal version>
+* sudo apt-get install open-vm-tools
+* sudo apt-get install open-vm-tools-desktop
+* reboot
+# ======== To to fix window resize isssue ========
+* sudo vi /lib/systemd/system/open-vm-tools.service
+    Add under [Unit] the following line:
+* After=display-manager.service
+    :wq(save) :qa!(abandon & quit)
+* Reference:      https://communities.vmware.com/thread/576221
+
+
+# Packages Installed:
 * openssh-server
 * dkms
 * build-essential
@@ -168,3 +184,17 @@ Packages Installed Successfully==========================================
 =========================================================================
 =========================================================================
 ========================================================================="
+
+echo "
+# Other Guide
+
+## To change the environment variable of Ubuntu (Julia for instance)
+* sudo nano /etc/profile
+* [Add following lines]
+    export JULIA_HOME="/home/user/julia-1.2.0"
+    export PATH=$JULIA_HOME/bin:$PATH
+* source /etc/profile [or log out and log in again to aactivate the changes]
+
+" > RicardoOtherGuide.md
+
+
