@@ -108,6 +108,9 @@ sudo apt-get install notepadqq
 # install bleachbit(CCleaner for Ubuntu)
 sudo apt-get install bleachbit -y
 
+# install PCMAN for linux
+sudo apt-get install pcmanx-gtk2 -y
+
 # install GNOME (In order to customized themes of the system)
 echo "=========================================================================
 =========================================================================
