@@ -37,9 +37,9 @@ Installation Starts======================================================
 "
 sudo apt-get update
 # Install zsh
-sudo apt-get install zsh
+sudo apt-get install zsh -y
 # Install powerline and the font style. 
-sudo apt-get install powerline fonts-powerline
+sudo apt-get install powerline fonts-powerline -y
 # Set up configuration file of zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
