@@ -108,21 +108,8 @@ sudo apt-get install notepadqq
 # install bleachbit(CCleaner for Ubuntu)
 sudo apt-get install bleachbit -y
 
-# install PCMAN for linux
-sudo apt-get install pcmanx-gtk2 -y
-
-# install GNOME (In order to customized themes of the system)
-echo "=========================================================================
-=========================================================================
-=========================================================================
-Installing GNOME.....may require user to restart the system after installing the service
-Within the GNOME Set-Up process, user would be able to select customized display manager, gdm3 or lightDM. (By using tab to change option, and press enter to select.)
-Gdm3 is the default Gnome 3 desktop environment greeter. 
-LightDM is a lighter and faster version of the same greeter system.
-GNOME Installation Starts..."
 sleep 5
-sudo apt-get install gnome-shell ubuntu-gnome-desktop -y
-sudo apt install gnome-tweak-tool -y
+
 
 # Create Installation log
 echo " # Pre-executed Procedure
@@ -133,12 +120,6 @@ echo " # Pre-executed Procedure
 * sudo apt-get install open-vm-tools
 * sudo apt-get install open-vm-tools-desktop
 * reboot
-# ======== To to fix window resize isssue ========
-* sudo vi /lib/systemd/system/open-vm-tools.service
-    Add under [Unit] the following line:
-* After=display-manager.service
-    :wq(save) :qa!(abandon & quit)
-* Reference:      https://communities.vmware.com/thread/576221
 
 
 # Packages Installed:
@@ -161,8 +142,7 @@ echo " # Pre-executed Procedure
 * typora
 * notepadqq
 * bleachbit
-* gnome-tweak-tool
-* gnome-shell ubuntu-gnome-desktop" > RicardoInstallationLog.md
+" > RicardoInstallationLog.md
 
 # Installation ended, create reminder list
 echo "=========================================================================
