@@ -22,7 +22,7 @@ echo "=========================================================================
 Welcome to Ricardo's Ubuntu Start-up Package!!!
 Maintainer: Ricardo S. Chao;
 https://github.com/chaoannricardo;https://www.linkedin.com/in/chaoannricardo/
-Last Updated: 2019/10/07"
+Last Updated: 2020/01/06"
 sleep 3
 echo "=========================================================================
 =========================================================================
@@ -66,34 +66,6 @@ pip3 install pandas
 pip3 install scikit-learn
 pip3 install matplotlib
 
-# install git service
-sudo apt-get install git -y
-sudo apt-get install git-core -y
-sudo apt-get install git-gui -y
-sudo apt-get install git-doc -y
-sudo apt-get install git-svn -y
-sudo apt-get install git-cvs -y
-sudo apt-get install gitweb -y
-sudo apt-get install gitk -y
-sudo apt-get install git-email -y
-sudo apt-get install git-daemon-run -y
-sudo apt-get install git-el -y
-
-# Github service setup
-ssh -T git@github.com
-
-# install Chinese Pinyin Method
-sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4 -y
-im-config -s ibus
-sudo apt-get install ibus-rime -y
-
-# install gtk (In order to install customized themes)
-sudo apt-get install libgtk2.0-dev -y
-sudo apt-get install libgtk-3-dev -y
-
-# install mojave theme of ubuntu 
-sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf -y
-
 # install Typora (https://support.typora.io/Typora-on-Linux/)
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./'
@@ -109,7 +81,6 @@ sudo apt-get install notepadqq
 sudo apt-get install bleachbit -y
 
 sleep 5
-
 
 # Create Installation log
 echo " # Pre-executed Procedure
@@ -132,13 +103,6 @@ echo " # Pre-executed Procedure
 * pandas
 * scikit-learn
 * matplotlib
-* git
-* ssh -T git@github.com
-* ibus-rime
-* libgtk2.0-dev
-* libgtk-3-dev
-* gtk2-engines-murrine 
-* gtk2-engines-pixbuf
 * typora
 * notepadqq
 * bleachbit
