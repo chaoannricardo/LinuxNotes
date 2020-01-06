@@ -15,18 +15,18 @@ The script aims to accomplish basic packages set-up for users, and to make the e
 
 The script includes package installation such as,
 
-* **Openssh-server**
-* **Dkms**
-* **Build-essential**
-* **Openjdk-8-jdk**
+* **dkms**
+* **bleachbit**
+* **build-essential**
+* **matplotlib**
+* **notepadqq**
+* **numpy**
+* **openjdk-8-jdk**
+* **openssh-server**
+* **pandas**
 * **python3-pip**
-* **Numpy**
-* **Pandas**
-* **Scikit-learn**
-* **Matplotlib**
-* **Typora**
-* **Notepadqq**
-* **Bleachbit**
+* **scikit-learn**
+* **typora**
 
 <br>
 
