@@ -106,16 +106,13 @@ echo " # Pre-executed Procedure
 * typora
 * notepadqq
 * bleachbit
-" > RicardoInstallationLog.md
+" > ~/RicardoInstallationLog.md
 
 # Installation ended, create reminder list
 echo "=========================================================================
 =========================================================================
 =========================================================================
 Reminder List of Addtional Packages======================================
-
-*  Mac-alike theme (Mojave) (https://github.com/vinceliuice/Mojave-gtk-theme)
-*  Rime input setup (http://shiunxun.blogspot.com/2018/04/ubuntu-1804.html)
 *  Anaconda (Common Python Packages)
 *  IntelliJ (Java Editor)
 *  Scala (Spark Languange)
@@ -125,7 +122,6 @@ Reminder List of Addtional Packages======================================
 *  Apache-Hadoop
 *  Apache-Kafka
 *  idle-python3.6
-
 Reminder List Ended======================================================
 Packages Installed Successfully==========================================
 =========================================================================
@@ -142,6 +138,6 @@ echo "
     export PATH=$JULIA_HOME/bin:$PATH
 * source /etc/profile [or log out and log in again to aactivate the changes]
 
-" > RicardoOtherGuide.md
+" > ~/RicardoOtherGuide.md
 
 

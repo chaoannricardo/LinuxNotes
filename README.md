@@ -40,6 +40,12 @@ im-config -s ibus
 sudo apt-get install ibus-rime -y
 ```
 
+**Rime input setup** (http://shiunxun.blogspot.com/2018/04/ubuntu-1804.html)
+
+**How to set up the input method:**
+
+Click the **setting button** within the upper-right menu >  **Region & Language** > **Manage Installed Language** > **Select "IBus"** > **Install/Remove Languages** > **Select Chinese** > **Press "+" button > Select Chinese(Rime)** 
+
 <br>
 
 * **Git** Installation inside Ubuntu
@@ -133,6 +139,8 @@ sudo apt-get install gnome-shell ubuntu-gnome-desktop gnome-tweak-tool
 sudo apt-get install libgtk2.0-dev libgtk-3-dev -y
 sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf -y
 ```
+
+**Mac-alike theme (Mojave)** (https://github.com/vinceliuice/Mojave-gtk-theme)
 
 <br>
 
