@@ -14,7 +14,6 @@ This is a repository mainly consists of codes related to packaged installation a
 The script aims to accomplish basic packages set-up for users, and to make the environment more friendly to new users of ubuntu Linux environment. 
 
 The script includes package installation such as,
-
 * **dkms**
 * **bleachbit**
 * **build-essential**
@@ -27,6 +26,27 @@ The script includes package installation such as,
 * **python3-pip**
 * **scikit-learn**
 * **typora**
+
+To clone the repository to your system, you may have to first activate git service on your system. 
+
+```shell
+# update repository list
+sudo apt-get update
+# to install git service
+sudo apt-get install git git-core git-gui git-doc git-svn git-cvs gitweb gitk git-email git-daemon-run git-el
+```
+After that,  clone this repository by typing following command:
+
+```shell
+# to clone the repository
+git clone https://github.com/chaoannricardo/ShellScript.git
+```
+
+Finally, you could finish the remain set-ups by activating the script:
+
+```shell
+./ubuntu_startup_pack.sh
+```
 
 <br>
 
