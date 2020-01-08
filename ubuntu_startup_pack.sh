@@ -49,6 +49,7 @@ sudo apt-get update
 sudo apt-get install openssh-server -y
 sudo apt-get install dkms -y
 sudo apt-get install build-essential -y
+sudo apt-get install open-vm-tools open-vm-tools-desktop -y
 
 # install Java jdk8
 sudo apt install openjdk-8-jdk -y
@@ -88,6 +89,7 @@ echo " # Pre-executed Procedure
 
 
 # Packages Installed:
+* open-vm-tools
 * openssh-server
 * dkms
 * build-essential

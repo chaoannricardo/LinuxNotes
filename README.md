@@ -38,8 +38,6 @@ sudo apt-get install git git-core git-gui git-doc git-svn git-cvs gitweb gitk gi
 # Pre-executed Procedure
 uname -r
 sudo apt-get install linux-headers-<kernal version>
-sudo apt-get install open-vm-tools
-sudo apt-get install open-vm-tools-desktop
 reboot
 ```
 After that,  clone this repository by typing following command:
