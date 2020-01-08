@@ -27,13 +27,20 @@ The script includes package installation such as,
 * **scikit-learn**
 * **typora**
 
-To clone the repository to your system, you may have to first activate git service on your system. 
+To clone the repository to your system, you may have to first activate git service on your system, as well as several install some required packages.
 
 ```shell
-# update repository list
+# update repository list, and upgrade
 sudo apt-get update
+sudo apt-get upgrade
 # to install git service
 sudo apt-get install git git-core git-gui git-doc git-svn git-cvs gitweb gitk git-email git-daemon-run git-el
+# Pre-executed Procedure
+uname -r
+sudo apt-get install linux-headers-<kernal version>
+sudo apt-get install open-vm-tools
+sudo apt-get install open-vm-tools-desktop
+reboot
 ```
 After that,  clone this repository by typing following command:
 
