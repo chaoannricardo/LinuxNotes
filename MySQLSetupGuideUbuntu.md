@@ -70,7 +70,7 @@ sudo apt-get install libodbc1
 sudo apt-get install odbcinst1debian2
 ```
 
-* ​	Register Unicode driver and ANSI driver
+* Register Unicode driver and ANSI driver
 
 ```shell
 # Registers the Unicode driver:
@@ -91,8 +91,8 @@ python -c "import pyodbc; conn = pyodbc.connect('DRIVER={MySQL ODBC 8.0 Driver};
 # Uninstallation
 
 ```Shell
-sudo apt remove --purge 'mysql*'
-sudo apt autoremove
+sudo apt-get remove --purge 'mysql*'
+sudo apt-get autoremove
 sudo rm /etc/init.d/mysql
 sudo systemctl daemon-reload 
 ```
