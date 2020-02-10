@@ -83,7 +83,7 @@ sudo myodbc-installer -a -d -n "MySQL ODBC 8.0" -t "Driver=/usr/local/lib/libmyo
 
 ```shell
 myodbc-installer -d -l
-python -c "import pyodbc; conn = pyodbc.connect('DRIVER={MySQL ODBC 8.0 Driver};SERVER=localhost;DATABASE=sys;UID=ricardo;PWD=anshi840809;')"
+python -c "import pyodbc; conn = pyodbc.connect('DRIVER={MySQL ODBC 8.0 Driver};SERVER=localhost;DATABASE=sys;UID=root;PWD=password;')"
 ```
 
 <br>

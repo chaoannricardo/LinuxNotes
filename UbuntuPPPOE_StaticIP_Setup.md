@@ -21,7 +21,7 @@ iface enp1s0 inet static
 address 220.135.181.17
 netmask 255.255.255.0
 gateway 220.135.181.254
-dns-nameservers 168.95.1.1 168.95 192.1 168.95.192.2
+dns-nameservers 168.95.1.1 168.95.192.1 168.95.192.2
 ```
 
 <br>
