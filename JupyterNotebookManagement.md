@@ -2,10 +2,10 @@
 
 # Index
 
-1. [Jupyter Notebook Kernel Set-up](#Jupyter Notebook Kernel Set-up)
-2. [Jupyter Notebook Convert](#Jupyter Notebook Convert)
-3. [Create Jupyter Notebook Content Index](#Create Jupyter Notebook Content Index)
-4. [Remote Jupyter Notebook Server Setup](#Remote Jupyter Notebook Server Setup)
+1. [Jupyter Notebook Kernel Set-up](#Jupyter-Notebook-Kernel Set-up)
+2. [Jupyter Notebook Convert](#Jupyter-Notebook-Convert)
+3. [Create Jupyter Notebook Content Index](#Create-Jupyter-Notebook-Content-Index)
+4. [Remote Jupyter Notebook Server Setup](#Remote-Jupyter-Notebook-Server-Setup)
 
 <br>
 
