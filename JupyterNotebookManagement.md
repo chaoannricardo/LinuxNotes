@@ -48,3 +48,11 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 
 # Remote Jupyter Notebook Server Setup
 
+**Reference:** https://www.digitalocean.com/community/tutorials/how-to-set-up-jupyter-notebook-with-python-3-on-ubuntu-18-04
+
+Shown as below.
+
+<img src="./image_resources/JupyterNotebookManagement_0.PNG" width=600px>
+
+<img src="./image_resources/JupyterNotebookManagement_1.PNG" width=600px>
+
