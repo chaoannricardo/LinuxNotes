@@ -44,7 +44,7 @@ After that,  clone this repository by typing following command:
 
 ```shell
 # to clone the repository
-git clone https://github.com/chaoannricardo/ShellScript.git
+git clone https://github.com/chaoannricardo/LinuxNotes.git
 ```
 
 Finally, you could finish the remain set-ups by activating the script:
