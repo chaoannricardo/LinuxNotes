@@ -145,7 +145,7 @@ git config --global user.name "user_name"
 git config --global user.email "email_id"
 ```
 
-<be>
+<br>
 
 * **GNOME** installation inside Ubuntu.
 
@@ -155,6 +155,16 @@ It may require user to restart the system after installing the service. Within t
 sudo apt-get update
 sudo apt-get install gnome-shell ubuntu-gnome-desktop gnome-tweak-tool
 ```
+<br>
+
+* **Gparted** set up (For Linux disk rearrangement)
+
+```shell
+sudo apt-get install gparted
+# to activate the package
+sudo gparted
+```
+
 <br>
 
 * **Gtk** setup (For customized themes installation)
