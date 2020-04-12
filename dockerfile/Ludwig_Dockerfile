@@ -1,0 +1,16 @@
+#Version 0.1.1; Last Modified: 4/28/2019
+FROM tensorflow/tensorflow:latest-py3
+
+LABEL maintainer='RicardoS.Chao;https://www.linkedin.com/in/chaoannricardo/;https://github.com/chaoannricardo;'
+
+#Install Ludwig & required packages
+RUN apt-get update
+RUN apt-get install python3-pip -y
+RUN apt-get install git -y
+RUN pip3 install ludwig
+
+#Add Modifications
+RUN apt-get install wget
+RUN wget 'https://raw.githubusercontent.com/chaoannricardo/Dockerfile/master/Repository/Ludwig/visualize.py' -O /usr/local/lib/python3.5/dist-packages/ludwig/visualize.py
+
+ENTRYPOINT /bin/bash
