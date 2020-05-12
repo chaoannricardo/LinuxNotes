@@ -52,14 +52,14 @@ sudo apt-get install build-essential -y
 sudo apt-get install open-vm-tools open-vm-tools-desktop -y
 
 # install Java jdk8
-sudo apt install openjdk-8-jdk -y
+# sudo apt install openjdk-8-jdk -y
 
 # install pip3, numpy, pandas, scikit-learn
 sudo apt-get install python3-pip -y
-pip3 install numpy
-pip3 install pandas
-pip3 install scikit-learn
-pip3 install matplotlib
+# pip3 install numpy
+# pip3 install pandas
+# pip3 install scikit-learn
+# pip3 install matplotlib
 
 # install Typora (https://support.typora.io/Typora-on-Linux/)
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
