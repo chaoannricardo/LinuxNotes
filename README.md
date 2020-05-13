@@ -149,6 +149,8 @@ git config --global user.email "email_id"
 
 **GIt Cache set-up**
 
+**Reference:** https://help.github.com/en/github/using-git/caching-your-github-password-in-git
+
 ```shell
 git config --global credential.helper cache
 # Set git to use the credential memory cache
