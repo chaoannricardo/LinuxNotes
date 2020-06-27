@@ -228,9 +228,13 @@ chsh -s /bin/zsh
 
 # Trouble Shooting
 
-* **Nautilus**
+* Ubuntu File manager missing (20.04)
 
-Ubuntu File manager
+Reinstall nautilus
+
+* Ubuntu desktop 
+
+sudo apt install gnome-shell-extension-desktop-icons
 
 * **Environment variable setup** for Ubuntu
 
