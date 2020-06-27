@@ -228,11 +228,11 @@ chsh -s /bin/zsh
 
 # Trouble Shooting
 
-* Ubuntu File manager missing (20.04)
+* **Ubuntu File manager missing (20.04)**
 
 Reinstall nautilus
 
-* Ubuntu desktop 
+* **Ubuntu desktop** 
 
 sudo apt install gnome-shell-extension-desktop-icons
 
