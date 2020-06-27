@@ -228,6 +228,10 @@ chsh -s /bin/zsh
 
 # Trouble Shooting
 
+* **Nautilus**
+
+Ubuntu File manager
+
 * **Environment variable setup** for Ubuntu
 
 ```shell
