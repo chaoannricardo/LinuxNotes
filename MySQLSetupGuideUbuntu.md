@@ -35,6 +35,10 @@ To grant remote access from other computers
 ```sql
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' IDENTIFIED BY 'yourpassword' WITH GRANT OPTION;
 
+【新增使用者並允許遠端連線】
+CREATE USER 'root'@'%' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
 -- enable new configuration
 flush privileges;  
 -- exit database
