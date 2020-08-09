@@ -13,20 +13,6 @@ This is a repository mainly consists of codes related to packaged installation a
 
 The script aims to accomplish basic packages set-up for users, and to make the environment more friendly to new users of ubuntu Linux environment. 
 
-The script includes package installation such as,
-* **dkms**
-* **bleachbit**
-* **build-essential**
-* **matplotlib**
-* **notepadqq**
-* **numpy**
-* **openjdk-8-jdk**
-* **openssh-server**
-* **pandas**
-* **python3-pip**
-* **scikit-learn**
-* **typora**
-
 To clone the repository to your system, you may have to first activate git service on your system, as well as several install some required packages.
 
 ```shell
@@ -159,8 +145,6 @@ git config --global credential.helper 'cache --timeout=3600'
 # Set the cache to timeout after 1 hour (setting is in seconds)
 ```
 
-
-
 <br>
 
 * **GNOME** installation inside Ubuntu.
@@ -171,16 +155,6 @@ It may require user to restart the system after installing the service. Within t
 sudo apt-get update
 sudo apt-get install gnome-shell ubuntu-gnome-desktop gnome-tweak-tool
 ```
-<br>
-
-* **Gparted** set up (For Linux disk rearrangement)
-
-```shell
-sudo apt-get install gparted
-# to activate the package
-sudo gparted
-```
-
 <br>
 
 * **Gtk** setup (For customized themes installation)
@@ -195,17 +169,11 @@ sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf -y
 
 <br>
 
-* **PCMAN** installation inside Ubuntu.
-
-```shell
-sudo apt-get update
-sudo apt-get install pcmanx-gtk2 -y
-```
-
-<br>
-
 * **ZSH** installation inside Ubuntu.
-**Before Installation**
+
+  **Official site:** https://ohmyz.sh/
+  
+  **Before Installation**
   
   * It is recommended to execute this script inside the directory where GitHub repositories store.
   * You are required to activate git service inside your environment before executing the installation script.
