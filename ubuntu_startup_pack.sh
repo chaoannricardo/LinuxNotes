@@ -101,9 +101,11 @@ Reminder List of Addtional Packages======================================
 *  Apache-Kafka
 *  Arduino (Arduino Editor)
 *  IntelliJ (Java Editor)
-*  Notepadqq (Notepad++ like editor in linux)
+*  Notepadqq (Notepad++ like editor in linux) (Official Site: https://notepadqq.com/wp/download/)
+*  Playonlinux (Official Site: https://www.playonlinux.com/en/download.html)
 *  Pycharm (Python Editor)
 *  Scala (Spark Languange)
+*  Sublime Text
 *  Wine
 Reminder List Ended======================================================
 Packages Installed Successfully==========================================
