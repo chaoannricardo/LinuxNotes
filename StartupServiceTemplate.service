@@ -1,0 +1,8 @@
+[Unit]
+After=network.service
+
+[Service]
+ExecStart=/opt/StartupScript/GuestMountVHDX.sh
+
+[Install]
+WantedBy=default.target
