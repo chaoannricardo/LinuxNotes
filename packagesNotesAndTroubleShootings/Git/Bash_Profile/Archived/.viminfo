@@ -1,0 +1,39 @@
+# 本 viminfo 檔案是由 Vim 8.1 所產生.
+# 如果想要自行修改請特別小心！
+
+# Viminfo version
+|1,4
+
+# 'encoding' 在此檔建立時的值
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 命令列 歷史記錄 (新到舊):
+:qa!
+|2,0,1572857811,,"qa!"
+
+# 搜尋字串 歷史記錄 (新到舊):
+
+# 運算式 歷史記錄 (新到舊):
+
+# 輸入行  歷史記錄 (新到舊):
+
+# Debug Line 歷史記錄 (新到舊):
+
+# 暫存器:
+
+# 檔案標記:
+'0  1  0  ~/Documents/191029_IntroductionOfManagedCare_林恆慶教授.md
+|4,48,1,0,1572857811,"~/Documents/191029_IntroductionOfManagedCare_林恆慶教授.md"
+
+# Jumplist (由新到舊):
+-'  1  0  ~/Documents/191029_IntroductionOfManagedCare_林恆慶教授.md
+|4,39,1,0,1572857811,"~/Documents/191029_IntroductionOfManagedCare_林恆慶教授.md"
+
+# 檔案內 Mark 記錄 (由新到舊):
+
+> ~/Documents/191029_IntroductionOfManagedCare_林恆慶教授.md
+	*	1572857804	0
+	"	1	0
