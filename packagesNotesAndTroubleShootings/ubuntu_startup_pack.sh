@@ -49,7 +49,7 @@ sudo apt-get update
 sudo apt-get install openssh-server -y
 sudo apt-get install dkms -y
 sudo apt-get install build-essential -y
-sudo apt-get install open-vm-tools open-vm-tools-desktop -y
+# sudo apt-get install open-vm-tools open-vm-tools-desktop -y
 
 echo 'Installing other packages, in alphabetical order..'
 
@@ -70,11 +70,10 @@ sudo apt-get install htop
 # install Java jdk8
 sudo apt install openjdk-8-jdk -y
 # install snap (advanced package management service in linux)
-# Official Documentation: https://snapcraft.io/docs/installing-snap-on-ubuntu
 sudo apt install snapd
 # install pip3
 sudo apt-get install python3-pip -y
-# install Typora (https://support.typora.io/Typora-on-Linux/)
+# install Typora 
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
 sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt-get update
@@ -87,30 +86,7 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 chsh -s /bin/zsh
 
-echo "Stable version of Notepadqq in ubuntu has not been released yet, please refer to its official site for further information."
-
 # Installation ended
 echo "
-=========================================================================
-=========================================================================
-=========================================================================
-Reminder List of Addtional Packages======================================
-*  Anaconda (Common Python Packages)
-*  Apache-Spark
-*  Apache-Hadoop
-*  Apache-Kafka
-*  Arduino (Arduino Editor)
-*  IntelliJ (Java Editor)
-*  Notepadqq (Notepad++ like editor in linux) (Official Site: https://notepadqq.com/wp/download/)
-*  Playonlinux (Official Site: https://www.playonlinux.com/en/download.html)
-*  Pycharm (Python Editor)
-*  Scala (Spark Languange)
-*  Sublime Text
-*  Wine
-Reminder List Ended======================================================
-Packages Installed Successfully==========================================
-=========================================================================
-=========================================================================
-========================================================================="
 
 sleep 5

@@ -6,11 +6,7 @@
 * http://www.emreciftci.net/2011/07/ubuntu-and-high-cpu-temperature.html
 * http://www.webupd8.org/2014/04/prevent-your-laptop-from-overheating.html
 
-
-
 <br>
-
-
 
 # Intel Plate
 
@@ -124,8 +120,6 @@ sudo sed -i 's/^GOVERNOR=.*/GOVERNOR="ondemand"/' /etc/init.d/cpufrequtils
 
 
 <br>
-
-
 
 # Install thermald
 
