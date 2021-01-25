@@ -4,6 +4,9 @@
 * snapd
 * set up mount disk
 * install fcitx
+* change kde setting
+* liboffice
+  
 
 # other softwares
 * brave
@@ -13,3 +16,4 @@
 * signal
 * typora
 * sublime
+* remmina

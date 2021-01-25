@@ -1,0 +1,13 @@
+# KDE Set up
+
+* mouse
+    * Reference: https://superuser.com/questions/1426077/how-to-enable-and-disable-double-click-mouse-options-in-kde
+    * vim ~/.config/kdeglobals
+    ...
+    [KDE]
+    ...
+    SingleClick=false
+    ...
+* screenshot
+  * 
+* animation 
