@@ -2,18 +2,29 @@
 
 # Procedures
 * Install following packages via dnf
+
  * fcitx
+
  * fcitx-chewing
+
  * kcm-fcitx
+
 * remove ~/.config/fcitx/ if exist.
+
 * set up /etc/environment and ~/.xprofile via following lines
-export XIM=fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XIM_PROGRAM=fcitx
-export XMODIFIERS=@im=fcitx
-fcitx &
+
+  ```
+  export XIM=fcitx
+  export GTK_IM_MODULE=fcitx
+  export QT_IM_MODULE=fcitx
+  export XIM_PROGRAM=fcitx
+  export XMODIFIERS=@im=fcitx
+  fcitx &
+  ```
+
 * imsettings-switch fcitx
+  
+  * ubuntu configuration (https://manpages.ubuntu.com/manpages/xenial/man8/im-config.8.html)
 
 # Some Other FCITX Commands
 * fcitx-diagnose

@@ -9,5 +9,17 @@
     SingleClick=false
     ...
 * screenshot
-  * 
+  * Reference: https://forum.kde.org/viewtopic.php?f=19&t=140137
+  * - enter Settings > Shortcuts > Custom Shortcuts
+  * - create new custom group ie "Spectacle": Edit > New Group
+  * - and create new custom shortcut(s): Edit > New > Global Shortcut > Command/URL
+  * - fill the name ie "PrintScreen Clipboard Rectangular"
+  * - Trigger: Ctrl+Shift+Print
+  * - Command/URL: spectacle -bcr
+  * - Apply
 * animation 
+
+
+rd.luks.uuid=7e3db968-b613-42d0-80ff-2cd7bf9e3e6e
+
+
