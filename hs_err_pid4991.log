@@ -1,0 +1,1186 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007ff0d1069eba, pid=4991, tid=0x00007ff0b14c9640
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_202-b08) (build 1.8.0_202-b08)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.202-b08 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# v  ~BufferBlob::jni_fast_GetLongField
+#
+# Core dump written. Default location: /media/storage/Windows_Storage/Storage/Github/LinuxNotes/core or core.4991
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007ff0e05df000):  JavaThread "AWT-XAWT" daemon [_thread_in_native, id=5188, stack(0x00007ff0b13c9000,0x00007ff0b14ca000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x00007ff0ff18f400, RBX=0x00007ff0e05df1f8, RCX=0x0000000000000001, RDX=0x0000000000000042
+RSP=0x00007ff0b14c8648, RBP=0x00007ff0b14c8670, RSI=0x0000000000000000, RDI=0x00007ff0e05df1f8
+R8 =0x00007ff0e05df000, R9 =0x0000000000000000, R10=0x0000000000000116, R11=0x00000000d63c39e0
+R12=0x0000000000000000, R13=0x0000000000000000, R14=0x00007ff0b182a380, R15=0x00007ff0e05df000
+RIP=0x00007ff0d1069eba, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007ff0b14c8648)
+0x00007ff0b14c8648:   00007ff0b1600064 00007ff047e77268
+0x00007ff0b14c8658:   0000000000000000 00007ff0d1dcf304
+0x00007ff0b14c8668:   00007ff0b14c86f0 00007ff05c50d5d0
+0x00007ff0b14c8678:   00007ff0fdd7cd47 00007ff047e77268
+0x00007ff0b14c8688:   00007ff0b14c86b0 0000000000000000
+0x00007ff0b14c8698:   00007ff0fdd76f43 00007ff0d1dcf304
+0x00007ff0b14c86a8:   00007ff0b15f83cf 00007ff0b14c8700
+0x00007ff0b14c86b8:   00007ff0d17a5736 00007ff0b14c8710
+0x00007ff0b14c86c8:   00007ff0b14c8940 00000000d85ad758
+0x00007ff0b14c86d8:   00007ff0d15c4bcc 00000000c0ebe808
+0x00007ff0b14c86e8:   0000000000000000 00000000d6c63ac8
+0x00007ff0b14c86f8:   0000000000000000 00007ff0b14c8940
+0x00007ff0b14c8708:   00007ff0d1dd1a9c 0000000000000059
+0x00007ff0b14c8718:   00007ff0d0e45fe0 00007ff0b14c8800
+0x00007ff0b14c8728:   00007ff0fe88081c 00007ff0e055bbf0
+0x00007ff0b14c8738:   00007ff0e05df000 00000000000003d8
+0x00007ff0b14c8748:   00007ff07c001228 00007ff07c000e50
+0x00007ff0b14c8758:   00007ff0e05deb80 0000000000000040
+0x00007ff0b14c8768:   00007ff0b14c87b0 0000000000000000
+0x00007ff0b14c8778:   00007ff0feb07455 00007ff0d0e45fe0
+0x00007ff0b14c8788:   0000000000000008 00007ff0b14c87f0
+0x00007ff0b14c8798:   0000000000000008 00007ff0b14c87c0
+0x00007ff0b14c87a8:   0000000000000040 00007ff0b14c8850
+0x00007ff0b14c87b8:   00007ff0febce32e 0000000000000000
+0x00007ff0b14c87c8:   0000000000000000 0000000000000000
+0x00007ff0b14c87d8:   00000000d5e07230 00000000d5e073c8
+0x00007ff0b14c87e8:   00000000d5e07230 0000000000000000
+0x00007ff0b14c87f8:   00000000d5e073c8 00000000d5e073c8
+0x00007ff0b14c8808:   00000000d5e07230 00000000d5e07230
+0x00007ff0b14c8818:   00000000d5e073c8 0000000000000000
+0x00007ff0b14c8828:   00000000d666c3e0 00000000d669f688
+0x00007ff0b14c8838:   00000000d5e6e5d8 00007ff06c0032e0 
+
+Instructions: (pc=0x00007ff0d1069eba)
+0x00007ff0d1069e9a:   00 00 00 00 00 00 44 8b 15 95 50 16 2e 4c 8b ce
+0x00007ff0d1069eaa:   41 f6 c2 01 0f 85 2e 00 00 00 4d 33 ca 4d 33 ca
+0x00007ff0d1069eba:   4d 8b 09 4c 8b da 49 c1 eb 02 4b 8b 04 19 49 bb
+0x00007ff0d1069eca:   3c ef 1c ff f0 7f 00 00 4c 33 d8 4c 33 d8 45 3b 
+
+Register to memory mapping:
+
+RAX=0x00007ff0ff18f400: <offset 0xf8d400> in /opt/pdfstudioviewer2020/jre/lib/amd64/server/libjvm.so at 0x00007ff0fe202000
+RBX=0x00007ff0e05df1f8 is an unknown value
+RCX=0x0000000000000001 is an unknown value
+RDX=0x0000000000000042 is an unknown value
+RSP=0x00007ff0b14c8648 is pointing into the stack for thread: 0x00007ff0e05df000
+RBP=0x00007ff0b14c8670 is pointing into the stack for thread: 0x00007ff0e05df000
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00007ff0e05df1f8 is an unknown value
+R8 =0x00007ff0e05df000 is a thread
+R9 =0x0000000000000000 is an unknown value
+R10=0x0000000000000116 is an unknown value
+R11=0x00000000d63c39e0 is an oop
+java.util.logging.Logger 
+ - klass: 'java/util/logging/Logger'
+R12=0x0000000000000000 is an unknown value
+R13=0x0000000000000000 is an unknown value
+R14=0x00007ff0b182a380: <offset 0x25f380> in /opt/pdfstudioviewer2020/jre/lib/amd64/libawt_xawt.so at 0x00007ff0b15cb000
+R15=0x00007ff0e05df000 is a thread
+
+
+Stack: [0x00007ff0b13c9000,0x00007ff0b14ca000],  sp=0x00007ff0b14c8648,  free space=1021k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+v  ~BufferBlob::jni_fast_GetLongField
+C  [libX11.so.6+0x6bd47]  _XimServerDestroy+0x47
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 4462  sun.awt.X11.XlibWrapper.XFilterEvent(JJ)Z (0 bytes) @ 0x00007ff0d17a56c4 [0x00007ff0d17a5680+0x44]
+J 4571% C1 sun.awt.X11.XToolkit.run(Z)V (410 bytes) @ 0x00007ff0d1dd1a9c [0x00007ff0d1dce380+0x371c]
+j  sun.awt.X11.XToolkit.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007ff05c49d000 JavaThread "Thread-8" [_thread_blocked, id=5199, stack(0x00007ff070789000,0x00007ff07088a000)]
+  0x00007ff05c108800 JavaThread "TimerQueue" daemon [_thread_blocked, id=5197, stack(0x00007ff0718cd000,0x00007ff0719ce000)]
+  0x00007ff05c301000 JavaThread "KeyTipManager processing thread" daemon [_thread_blocked, id=5196, stack(0x00007ff071dce000,0x00007ff071ecf000)]
+  0x00007ff0e000d000 JavaThread "DestroyJavaVM" [_thread_blocked, id=5164, stack(0x00007ff0efcdc000,0x00007ff0efddc000)]
+  0x00007ff0e0b74800 JavaThread "Timer-0" daemon [_thread_blocked, id=5192, stack(0x00007ff0726fe000,0x00007ff0727ff000)]
+  0x00007ff0e07cd800 JavaThread "install4j startup listener" daemon [_thread_blocked, id=5191, stack(0x00007ff0b0632000,0x00007ff0b0733000)]
+  0x00007ff0e07c9800 JavaThread "Thread-0" daemon [_thread_in_native, id=5190, stack(0x00007ff0b0733000,0x00007ff0b0834000)]
+=>0x00007ff0e05df000 JavaThread "AWT-XAWT" daemon [_thread_in_native, id=5188, stack(0x00007ff0b13c9000,0x00007ff0b14ca000)]
+  0x00007ff0e0583000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=5187, stack(0x00007ff0b14ca000,0x00007ff0b15cb000)]
+  0x00007ff0e0407800 JavaThread "Service Thread" daemon [_thread_blocked, id=5185, stack(0x00007ff0b1bfc000,0x00007ff0b1cfd000)]
+  0x00007ff0e03f4800 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=5184, stack(0x00007ff0b1cfe000,0x00007ff0b1dfe000)]
+  0x00007ff0e03f2000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=5183, stack(0x00007ff0b1dff000,0x00007ff0b1eff000)]
+  0x00007ff0e03f0000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=5182, stack(0x00007ff0b1f00000,0x00007ff0b2000000)]
+  0x00007ff0e03ee000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=5181, stack(0x00007ff0d0022000,0x00007ff0d0122000)]
+  0x00007ff0e03eb800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5180, stack(0x00007ff0d0122000,0x00007ff0d0223000)]
+  0x00007ff0e03ea800 JavaThread "Surrogate Locker Thread (Concurrent GC)" daemon [_thread_blocked, id=5179, stack(0x00007ff0d0223000,0x00007ff0d0324000)]
+  0x00007ff0e03b8800 JavaThread "Finalizer" daemon [_thread_blocked, id=5178, stack(0x00007ff0d0324000,0x00007ff0d0425000)]
+  0x00007ff0e03b6000 JavaThread "Reference Handler" daemon [_thread_blocked, id=5177, stack(0x00007ff0d0425000,0x00007ff0d0526000)]
+
+Other Threads:
+  0x00007ff0e03ac800 VMThread [stack: 0x00007ff0d0527000,0x00007ff0d0627000] [id=5176]
+  0x00007ff0e040a800 WatcherThread [stack: 0x00007ff0b1afc000,0x00007ff0b1bfc000] [id=5186]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ par new generation   total 76800K, used 19030K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,  22% used [0x00000000c0000000, 0x00000000c0edaf18, 0x00000000c42b0000)
+  from space 8512K,  44% used [0x00000000c4b00000, 0x00000000c4ebaa28, 0x00000000c5350000)
+  to   space 8512K,   0% used [0x00000000c42b0000, 0x00000000c42b0000, 0x00000000c4b00000)
+ concurrent mark-sweep generation total 170688K, used 49258K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 41628K, capacity 42083K, committed 42564K, reserved 1085440K
+  class space    used 5840K, capacity 5978K, committed 6048K, reserved 1048576K
+
+Card table byte_map: [0x00007ff0edfe5000,0x00007ff0ee1e6000] byte_map_base: 0x00007ff0ed9e5000
+
+Marking Bits: (CMSBitMap*) 0x00007ff0e0096928
+ Bits: [0x00007ff0ecbdc000, 0x00007ff0ed686c00)
+
+Mod Union Table: (CMSBitMap*) 0x00007ff0e00969e8
+ Bits: [0x00007ff0fdc5b000, 0x00007ff0fdc85ab0)
+
+Polling page: 0x00007ff0ff5ff000
+
+CodeCache: size=245760Kb used=13778Kb max_used=14092Kb free=231981Kb
+ bounds [0x00007ff0d1000000, 0x00007ff0d1de0000, 0x00007ff0e0000000]
+ total_blobs=4825 nmethods=4088 adapters=649
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 34032.920 Thread 0x00007ff0e03f4800 4576       3       java.awt.EventQueue$3::run (60 bytes)
+Event: 34032.922 Thread 0x00007ff0e03f4800 nmethod 4576 0x00007ff0d114bf50 code [0x00007ff0d114c100, 0x00007ff0d114c5b8]
+Event: 34032.936 Thread 0x00007ff0e03f4800 4577       3       java.awt.EventQueue::access$500 (7 bytes)
+Event: 34032.937 Thread 0x00007ff0e03f4800 nmethod 4577 0x00007ff0d11cbcd0 code [0x00007ff0d11cbe40, 0x00007ff0d11cbfa8]
+Event: 34032.950 Thread 0x00007ff0e03f4800 4578       3       java.awt.EventQueue::dispatchEventImpl (149 bytes)
+Event: 34032.957 Thread 0x00007ff0e03f4800 nmethod 4578 0x00007ff0d1157e10 code [0x00007ff0d1158180, 0x00007ff0d115a018]
+Event: 34470.634 Thread 0x00007ff0e03ee000 4579       4       java.util.AbstractCollection::toArray (147 bytes)
+Event: 34470.643 Thread 0x00007ff0e03ee000 nmethod 4579 0x00007ff0d146c250 code [0x00007ff0d146c3c0, 0x00007ff0d146c6d8]
+Event: 38790.659 Thread 0x00007ff0e03f2000 4580       4       java.util.HashMap::values (25 bytes)
+Event: 38790.661 Thread 0x00007ff0e03f2000 nmethod 4580 0x00007ff0d11f8550 code [0x00007ff0d11f86a0, 0x00007ff0d11f8718]
+
+GC Heap History (10 events):
+Event: 2.707 GC heap before
+{Heap before GC invocations=4 (full 1):
+ par new generation   total 76800K, used 73518K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K, 100% used [0x00000000c0000000, 0x00000000c42b0000, 0x00000000c42b0000)
+  from space 8512K,  61% used [0x00000000c42b0000, 0x00000000c47cba90, 0x00000000c4b00000)
+  to   space 8512K,   0% used [0x00000000c4b00000, 0x00000000c4b00000, 0x00000000c5350000)
+ concurrent mark-sweep generation total 170688K, used 28313K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 37271K, capacity 37785K, committed 38084K, reserved 1081344K
+  class space    used 5147K, capacity 5299K, committed 5408K, reserved 1048576K
+Event: 2.713 GC heap after
+Heap after GC invocations=5 (full 1):
+ par new generation   total 76800K, used 6018K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,   0% used [0x00000000c0000000, 0x00000000c0000000, 0x00000000c42b0000)
+  from space 8512K,  70% used [0x00000000c4b00000, 0x00000000c50e0a10, 0x00000000c5350000)
+  to   space 8512K,   0% used [0x00000000c42b0000, 0x00000000c42b0000, 0x00000000c4b00000)
+ concurrent mark-sweep generation total 170688K, used 28313K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 37271K, capacity 37785K, committed 38084K, reserved 1081344K
+  class space    used 5147K, capacity 5299K, committed 5408K, reserved 1048576K
+}
+Event: 2.967 GC heap before
+{Heap before GC invocations=5 (full 1):
+ par new generation   total 76800K, used 74342K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K, 100% used [0x00000000c0000000, 0x00000000c42b0000, 0x00000000c42b0000)
+  from space 8512K,  71% used [0x00000000c4b00000, 0x00000000c50e9be8, 0x00000000c5350000)
+  to   space 8512K,   0% used [0x00000000c42b0000, 0x00000000c42b0000, 0x00000000c4b00000)
+ concurrent mark-sweep generation total 170688K, used 28313K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 39067K, capacity 39595K, committed 40004K, reserved 1083392K
+  class space    used 5531K, capacity 5686K, committed 5792K, reserved 1048576K
+Event: 2.981 GC heap after
+Heap after GC invocations=6 (full 1):
+ par new generation   total 76800K, used 8512K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,   0% used [0x00000000c0000000, 0x00000000c0000000, 0x00000000c42b0000)
+  from space 8512K, 100% used [0x00000000c42b0000, 0x00000000c4b00000, 0x00000000c4b00000)
+  to   space 8512K,   0% used [0x00000000c4b00000, 0x00000000c4b00000, 0x00000000c5350000)
+ concurrent mark-sweep generation total 170688K, used 31827K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 39067K, capacity 39595K, committed 40004K, reserved 1083392K
+  class space    used 5531K, capacity 5686K, committed 5792K, reserved 1048576K
+}
+Event: 6.172 GC heap before
+{Heap before GC invocations=6 (full 1):
+ par new generation   total 76800K, used 60187K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,  75% used [0x00000000c0000000, 0x00000000c3276f08, 0x00000000c42b0000)
+  from space 8512K, 100% used [0x00000000c42b0000, 0x00000000c4b00000, 0x00000000c4b00000)
+  to   space 8512K,   0% used [0x00000000c4b00000, 0x00000000c4b00000, 0x00000000c5350000)
+ concurrent mark-sweep generation total 170688K, used 31827K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 41188K, capacity 41667K, committed 42052K, reserved 1085440K
+  class space    used 5798K, capacity 5946K, committed 6048K, reserved 1048576K
+Event: 6.189 GC heap after
+Heap after GC invocations=7 (full 1):
+ par new generation   total 76800K, used 8511K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,   0% used [0x00000000c0000000, 0x00000000c0000000, 0x00000000c42b0000)
+  from space 8512K,  99% used [0x00000000c4b00000, 0x00000000c534fff8, 0x00000000c5350000)
+  to   space 8512K,   0% used [0x00000000c42b0000, 0x00000000c42b0000, 0x00000000c4b00000)
+ concurrent mark-sweep generation total 170688K, used 61246K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 41188K, capacity 41667K, committed 42052K, reserved 1085440K
+  class space    used 5798K, capacity 5946K, committed 6048K, reserved 1048576K
+}
+Event: 6.283 GC heap before
+{Heap before GC invocations=7 (full 2):
+ par new generation   total 76800K, used 10561K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,   3% used [0x00000000c0000000, 0x00000000c02007c0, 0x00000000c42b0000)
+  from space 8512K,  99% used [0x00000000c4b00000, 0x00000000c534fff8, 0x00000000c5350000)
+  to   space 8512K,   0% used [0x00000000c42b0000, 0x00000000c42b0000, 0x00000000c4b00000)
+ concurrent mark-sweep generation total 170688K, used 50221K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 41478K, capacity 41955K, committed 42308K, reserved 1085440K
+  class space    used 5835K, capacity 5978K, committed 6048K, reserved 1048576K
+Event: 6.290 GC heap after
+Heap after GC invocations=8 (full 2):
+ par new generation   total 76800K, used 4049K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,   0% used [0x00000000c0000000, 0x00000000c0000000, 0x00000000c42b0000)
+  from space 8512K,  47% used [0x00000000c42b0000, 0x00000000c46a4588, 0x00000000c4b00000)
+  to   space 8512K,   0% used [0x00000000c4b00000, 0x00000000c4b00000, 0x00000000c5350000)
+ concurrent mark-sweep generation total 170688K, used 50221K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 41478K, capacity 41955K, committed 42308K, reserved 1085440K
+  class space    used 5835K, capacity 5978K, committed 6048K, reserved 1048576K
+}
+Event: 6.292 GC heap before
+{Heap before GC invocations=8 (full 3):
+ par new generation   total 76800K, used 4171K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,   0% used [0x00000000c0000000, 0x00000000c001e870, 0x00000000c42b0000)
+  from space 8512K,  47% used [0x00000000c42b0000, 0x00000000c46a4588, 0x00000000c4b00000)
+  to   space 8512K,   0% used [0x00000000c4b00000, 0x00000000c4b00000, 0x00000000c5350000)
+ concurrent mark-sweep generation total 170688K, used 50221K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 41485K, capacity 41955K, committed 42308K, reserved 1085440K
+  class space    used 5836K, capacity 5978K, committed 6048K, reserved 1048576K
+Event: 6.295 GC heap after
+Heap after GC invocations=9 (full 3):
+ par new generation   total 76800K, used 3818K [0x00000000c0000000, 0x00000000c5350000, 0x00000000d5550000)
+  eden space 68288K,   0% used [0x00000000c0000000, 0x00000000c0000000, 0x00000000c42b0000)
+  from space 8512K,  44% used [0x00000000c4b00000, 0x00000000c4ebaa28, 0x00000000c5350000)
+  to   space 8512K,   0% used [0x00000000c42b0000, 0x00000000c42b0000, 0x00000000c4b00000)
+ concurrent mark-sweep generation total 170688K, used 50221K [0x00000000d5550000, 0x00000000dfc00000, 0x0000000100000000)
+ Metaspace       used 41485K, capacity 41955K, committed 42308K, reserved 1085440K
+  class space    used 5836K, capacity 5978K, committed 6048K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 4.603 Thread 0x00007ff05c4da000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007ff0d140f58c method=java.io.FilterReader.read()I @ 4
+Event: 6.153 Thread 0x00007ff0e0cb3800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff0d1ad17ec method=sun.font.CompositeGlyphMapper.getCachedGlyphCode(I)I @ 19
+Event: 10985.589 Thread 0x00007ff0e05df000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff0d1d85d98 method=sun.awt.X11.XToolkit$1.dispatchEvent(Lsun/awt/X11/XEvent;)V @ 6
+Event: 29475.788 Thread 0x00007ff0e05df000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff0d1dc534c method=sun.awt.X11.XToolkit.run(Z)V @ 76
+Event: 32550.619 Thread 0x00007ff0e0b74800 Uncommon trap: reason=predicate action=maybe_recompile pc=0x00007ff0d1dc3598 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 49
+Event: 33510.629 Thread 0x00007ff0e0b74800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007ff0d1dc2e94 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 33510.629 Thread 0x00007ff0e0b74800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007ff0d1dc2e94 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 33510.629 Thread 0x00007ff0e0b74800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007ff0d1dc2e94 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 33540.628 Thread 0x00007ff0e0b74800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00007ff0d1dc2e94 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 40157.352 Thread 0x00007ff0e05df000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff0d15220c8 method=sun.awt.X11.XDropTargetEventProcessor.doProcessEvent(Lsun/awt/X11/XEvent;)Z @ 6
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 1.592 Thread 0x00007ff0e0cb3800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 22> (0x00000000c2973dc0) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u202/12319/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp, line 368]
+Event: 1.592 Thread 0x00007ff0e0cb3800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 160> (0x00000000c2976380) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u202/12319/hotspot/src/share/vm/interpreter/interpreterRuntime.cpp, line 368]
+Event: 1.594 Thread 0x00007ff0e0cb3800 Exception <a 'java/lang/ClassNotFoundException': net/miginfocom/layout/UnitValueCustomizer> (0x00000000c2988810) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u202/12319/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 1.596 Thread 0x00007ff0e0cb3800 Exception <a 'java/lang/ClassNotFoundException': net/miginfocom/layout/BoundSizeBeanInfo> (0x00000000c29b20b8) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u202/12319/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 1.596 Thread 0x00007ff0e0cb3800 Exception <a 'java/lang/ClassNotFoundException': net/miginfocom/layout/BoundSizeCustomizer> (0x00000000c29c21b8) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u202/12319/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 210]
+Event: 2.297 Thread 0x00007ff0e0cb3800 Implicit null exception at 0x00007ff0d1247b1b to 0x00007ff0d1247eed
+Event: 2.383 Thread 0x00007ff0e0cb3800 Implicit null exception at 0x00007ff0d1306f39 to 0x00007ff0d1308517
+Event: 2.825 Thread 0x00007ff0e0cb3800 Implicit null exception at 0x00007ff0d18830b9 to 0x00007ff0d1883641
+Event: 2.911 Thread 0x00007ff0e0cb3800 Exception <a 'java/lang/UnsupportedOperationException': > (0x00000000c35230a8) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u202/12319/hotspot/src/share/vm/prims/jni.cpp, line 736]
+Event: 6.153 Thread 0x00007ff0e0cb3800 Implicit null exception at 0x00007ff0d1ad176b to 0x00007ff0d1ad17dd
+
+Events (10 events):
+Event: 34470.649 Thread 0x00007ff0e03ee000 flushing nmethod 0x00007ff0d1537610
+Event: 34470.650 Thread 0x00007ff0e03ee000 flushing nmethod 0x00007ff0d1549450
+Event: 34470.650 Thread 0x00007ff0e03ee000 flushing nmethod 0x00007ff0d154b7d0
+Event: 34470.650 Thread 0x00007ff0e03ee000 flushing nmethod 0x00007ff0d154c150
+Event: 38790.661 Thread 0x00007ff0e03f2000 flushing nmethod 0x00007ff0d155d710
+Event: 38790.665 Thread 0x00007ff0e03f2000 flushing nmethod 0x00007ff0d16085d0
+Event: 38790.665 Thread 0x00007ff0e03f2000 flushing nmethod 0x00007ff0d160f790
+Event: 40157.352 Thread 0x00007ff0e05df000 Uncommon trap: trap_request=0xffffff65 fr.pc=0x00007ff0d15220c8
+Event: 40157.352 Thread 0x00007ff0e05df000 DEOPT PACKING pc=0x00007ff0d15220c8 sp=0x00007ff0b14c86a0
+Event: 40157.352 Thread 0x00007ff0e05df000 DEOPT UNPACKING pc=0x00007ff0d104573a sp=0x00007ff0b14c8668 mode 2
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 00:21 8513381                            /opt/pdfstudioviewer2020/jre/bin/java
+00600000-00601000 r--p 00000000 00:21 8513381                            /opt/pdfstudioviewer2020/jre/bin/java
+00601000-00602000 rw-p 00001000 00:21 8513381                            /opt/pdfstudioviewer2020/jre/bin/java
+02008000-0206d000 rw-p 00000000 00:00 0                                  [heap]
+c0000000-c5350000 rw-p 00000000 00:00 0 
+c5350000-d5550000 ---p 00000000 00:00 0 
+d5550000-dfc00000 rw-p 00000000 00:00 0 
+dfc00000-100000000 ---p 00000000 00:00 0 
+100000000-1005e8000 rw-p 00000000 00:00 0 
+1005e8000-140000000 ---p 00000000 00:00 0 
+7ff034000000-7ff034021000 rw-p 00000000 00:00 0 
+7ff034021000-7ff038000000 ---p 00000000 00:00 0 
+7ff03c000000-7ff03c021000 rw-p 00000000 00:00 0 
+7ff03c021000-7ff040000000 ---p 00000000 00:00 0 
+7ff040000000-7ff04009e000 rw-p 00000000 00:00 0 
+7ff04009e000-7ff044000000 ---p 00000000 00:00 0 
+7ff046e96000-7ff0475fc000 rw-s 00000000 00:01 32772                      /SYSV00000000 (deleted)
+7ff047a05000-7ff047c05000 rw-p 00000000 00:00 0 
+7ff047cff000-7ff047ebf000 rw-p 00000000 00:00 0 
+7ff047ebf000-7ff047f02000 ---p 00000000 00:00 0 
+7ff047f02000-7ff048000000 rw-p 00000000 00:00 0 
+7ff048000000-7ff048021000 rw-p 00000000 00:00 0 
+7ff048021000-7ff04c000000 ---p 00000000 00:00 0 
+7ff04c000000-7ff04c0a1000 rw-p 00000000 00:00 0 
+7ff04c0a1000-7ff050000000 ---p 00000000 00:00 0 
+7ff050000000-7ff050021000 rw-p 00000000 00:00 0 
+7ff050021000-7ff054000000 ---p 00000000 00:00 0 
+7ff054000000-7ff054021000 rw-p 00000000 00:00 0 
+7ff054021000-7ff058000000 ---p 00000000 00:00 0 
+7ff058000000-7ff058021000 rw-p 00000000 00:00 0 
+7ff058021000-7ff05c000000 ---p 00000000 00:00 0 
+7ff05c000000-7ff05c647000 rw-p 00000000 00:00 0 
+7ff05c647000-7ff060000000 ---p 00000000 00:00 0 
+7ff060000000-7ff060021000 rw-p 00000000 00:00 0 
+7ff060021000-7ff064000000 ---p 00000000 00:00 0 
+7ff064000000-7ff064021000 rw-p 00000000 00:00 0 
+7ff064021000-7ff068000000 ---p 00000000 00:00 0 
+7ff068000000-7ff068021000 rw-p 00000000 00:00 0 
+7ff068021000-7ff06c000000 ---p 00000000 00:00 0 
+7ff06c000000-7ff06c2c6000 rw-p 00000000 00:00 0 
+7ff06c2c6000-7ff070000000 ---p 00000000 00:00 0 
+7ff070048000-7ff07004b000 ---p 00000000 00:00 0 
+7ff07004b000-7ff070149000 rw-p 00000000 00:00 0 
+7ff070149000-7ff07014c000 ---p 00000000 00:00 0 
+7ff07014c000-7ff07044a000 rw-p 00000000 00:00 0 
+7ff07044a000-7ff070482000 r-xp 00000000 00:21 8513457                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsunec.so
+7ff070482000-7ff070681000 ---p 00038000 00:21 8513457                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsunec.so
+7ff070681000-7ff070686000 r--p 00037000 00:21 8513457                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsunec.so
+7ff070686000-7ff070688000 rw-p 0003c000 00:21 8513457                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsunec.so
+7ff070688000-7ff07068b000 ---p 00000000 00:00 0 
+7ff07068b000-7ff070789000 rw-p 00000000 00:00 0 
+7ff070789000-7ff07078c000 ---p 00000000 00:00 0 
+7ff07078c000-7ff07088a000 rw-p 00000000 00:00 0 
+7ff07088a000-7ff07088d000 ---p 00000000 00:00 0 
+7ff07088d000-7ff070b8b000 rw-p 00000000 00:00 0 
+7ff070b8b000-7ff070d84000 rw-p 00000000 00:00 0 
+7ff070d84000-7ff070d8b000 ---p 00000000 00:00 0 
+7ff070d8b000-7ff070f8a000 rw-p 00000000 00:00 0 
+7ff070f8a000-7ff070f8b000 ---p 00000000 00:00 0 
+7ff070f8b000-7ff071183000 rw-p 00000000 00:00 0 
+7ff071183000-7ff07118b000 ---p 00000000 00:00 0 
+7ff07118b000-7ff07138b000 rw-p 00000000 00:00 0 
+7ff07138b000-7ff0713fb000 r-xp 00000000 00:21 8513444                    /opt/pdfstudioviewer2020/jre/lib/amd64/liblcms.so
+7ff0713fb000-7ff0715fb000 ---p 00070000 00:21 8513444                    /opt/pdfstudioviewer2020/jre/lib/amd64/liblcms.so
+7ff0715fb000-7ff0715fd000 r--p 00070000 00:21 8513444                    /opt/pdfstudioviewer2020/jre/lib/amd64/liblcms.so
+7ff0715fd000-7ff071600000 rw-p 00072000 00:21 8513444                    /opt/pdfstudioviewer2020/jre/lib/amd64/liblcms.so
+7ff071600000-7ff0717fa000 rw-p 00000000 00:00 0 
+7ff0717fa000-7ff071801000 ---p 00000000 00:00 0 
+7ff071801000-7ff07181b000 r--s 00000000 00:21 123514                     /home/ricardoschao/.cache/fontconfig/123d59b33ddb0e7c76bb24004bd5cfac-le64.cache-7
+7ff071834000-7ff071835000 r--s 00000000 00:21 89899                      /home/ricardoschao/.cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-7
+7ff071836000-7ff071838000 r--s 00000000 00:21 15318                      /usr/lib/fontconfig/cache/3f821257dd33660ba7bbb45c32deb84c-le64.cache-7
+7ff071838000-7ff07183b000 r--s 00000000 00:21 15308                      /usr/lib/fontconfig/cache/131ab5cc1583381c4f7ce0194912c56d-le64.cache-7
+7ff07183b000-7ff07183c000 r--s 00000000 00:21 15313                      /usr/lib/fontconfig/cache/26078b1cf62d7535e9fc9c56a8803883-le64.cache-7
+7ff07183c000-7ff07183d000 r--s 00000000 00:21 10698                      /home/ricardoschao/.cache/fontconfig/f951a6bc01c50d58ac4af16a0108457e-le64.cache-7
+7ff07183d000-7ff07183e000 r--s 00000000 00:21 15333                      /usr/lib/fontconfig/cache/ac68f755438cc3dc5a526084839fc7ca-le64.cache-7
+7ff07183e000-7ff07183f000 r--s 00000000 00:21 15330                      /usr/lib/fontconfig/cache/8cab66d8f642305e525ba3e322d0979c-le64.cache-7
+7ff07183f000-7ff071840000 r--s 00000000 00:21 15323                      /usr/lib/fontconfig/cache/6b4d77390f008fe4d7fb61c915674aee-le64.cache-7
+7ff071840000-7ff071845000 r--s 00000000 00:21 10696                      /home/ricardoschao/.cache/fontconfig/cfde08ab28ad1d91784abb10973575e3-le64.cache-7
+7ff071845000-7ff071849000 r--s 00000000 00:21 15337                      /usr/lib/fontconfig/cache/bf4088b6c6290c8d6936483b844e6a40-le64.cache-7
+7ff071849000-7ff07184a000 r--s 00000000 00:21 15344                      /usr/lib/fontconfig/cache/f132fa2327207a6ac3298c0518879731-le64.cache-7
+7ff07184a000-7ff07184b000 r--s 00000000 00:21 15336                      /usr/lib/fontconfig/cache/b887eea8f1b96e1d899b44ed6681fc27-le64.cache-7
+7ff07184b000-7ff07184c000 r--s 00000000 00:21 15328                      /usr/lib/fontconfig/cache/860639f272b8b4b3094f9e399e41bccd-le64.cache-7
+7ff07184c000-7ff07184d000 r--s 00000000 00:21 15322                      /usr/lib/fontconfig/cache/5d33f04e74a97395cf88bbd83847f1f1-le64.cache-7
+7ff07184d000-7ff07184e000 r--s 00000000 00:21 15342                      /usr/lib/fontconfig/cache/df893b4576ad6107f9397134092c4059-le64.cache-7
+7ff07184e000-7ff07184f000 r--s 00000000 00:21 15331                      /usr/lib/fontconfig/cache/900402270e15d763a6e008bb2d4c7686-le64.cache-7
+7ff07184f000-7ff071850000 r--s 00000000 00:21 15320                      /usr/lib/fontconfig/cache/47f48679023f44a4d1e44699a69464f6-le64.cache-7
+7ff071850000-7ff071851000 r--s 00000000 00:21 15314                      /usr/lib/fontconfig/cache/2881ed3fd21ca306ddad6f9b0dd3189f-le64.cache-7
+7ff071851000-7ff071852000 r--s 00000000 00:21 15316                      /usr/lib/fontconfig/cache/3c3fb04d32a5211b073874b125d29701-le64.cache-7
+7ff071852000-7ff071854000 r--s 00000000 00:21 15317                      /usr/lib/fontconfig/cache/3e9ca894d7ccd8b9fedb236c4f3f7c4e-le64.cache-7
+7ff071854000-7ff071856000 r--s 00000000 00:21 15321                      /usr/lib/fontconfig/cache/5535e07303e0edee0923e77e4e59b69c-le64.cache-7
+7ff071856000-7ff071858000 r--s 00000000 00:21 15338                      /usr/lib/fontconfig/cache/cf759820c416606818fc74e5e9991313-le64.cache-7
+7ff071858000-7ff071860000 r--s 00000000 00:21 15343                      /usr/lib/fontconfig/cache/e34b99a1e22e6f7451938fb9934274e6-le64.cache-7
+7ff071860000-7ff07187b000 r--s 00000000 00:21 15341                      /usr/lib/fontconfig/cache/d63f98f14a274bd69a5425fc33aaac6b-le64.cache-7
+7ff07187b000-7ff071891000 r--s 00000000 00:21 15329                      /usr/lib/fontconfig/cache/8810ee51c158c7bfaed726592ffe4eb9-le64.cache-7
+7ff071891000-7ff07189a000 r--s 00000000 00:21 15325                      /usr/lib/fontconfig/cache/6ee3103884cce7b2fe6f32eba9089175-le64.cache-7
+7ff07189a000-7ff07189f000 r--s 00000000 00:21 15326                      /usr/lib/fontconfig/cache/7bbebb41f246c24642924bd8585d5345-le64.cache-7
+7ff0718cd000-7ff0718d0000 ---p 00000000 00:00 0 
+7ff0718d0000-7ff071bce000 rw-p 00000000 00:00 0 
+7ff071bce000-7ff071dce000 rw-p 00000000 00:00 0 
+7ff071dce000-7ff071dd1000 ---p 00000000 00:00 0 
+7ff071dd1000-7ff071ecf000 rw-p 00000000 00:00 0 
+7ff071ecf000-7ff071ef9000 r-xp 00000000 00:21 8513410                    /opt/pdfstudioviewer2020/jre/lib/amd64/libdcpr.so
+7ff071ef9000-7ff0720f8000 ---p 0002a000 00:21 8513410                    /opt/pdfstudioviewer2020/jre/lib/amd64/libdcpr.so
+7ff0720f8000-7ff0720f9000 r--p 00029000 00:21 8513410                    /opt/pdfstudioviewer2020/jre/lib/amd64/libdcpr.so
+7ff0720f9000-7ff0720fc000 rw-p 0002a000 00:21 8513410                    /opt/pdfstudioviewer2020/jre/lib/amd64/libdcpr.so
+7ff0720fc000-7ff0722fc000 rw-p 00000000 00:00 0 
+7ff0722fc000-7ff0722ff000 ---p 00000000 00:00 0 
+7ff0722ff000-7ff0723fd000 rw-p 00000000 00:00 0 
+7ff0723fd000-7ff072400000 ---p 00000000 00:00 0 
+7ff072400000-7ff0726fe000 rw-p 00000000 00:00 0 
+7ff0726fe000-7ff072701000 ---p 00000000 00:00 0 
+7ff072701000-7ff074000000 rw-p 00000000 00:00 0 
+7ff074000000-7ff074021000 rw-p 00000000 00:00 0 
+7ff074021000-7ff078000000 ---p 00000000 00:00 0 
+7ff078000000-7ff078021000 rw-p 00000000 00:00 0 
+7ff078021000-7ff07c000000 ---p 00000000 00:00 0 
+7ff07c000000-7ff07c5da000 rw-p 00000000 00:00 0 
+7ff07c5da000-7ff080000000 ---p 00000000 00:00 0 
+7ff080000000-7ff080021000 rw-p 00000000 00:00 0 
+7ff080021000-7ff084000000 ---p 00000000 00:00 0 
+7ff084000000-7ff084991000 rw-p 00000000 00:00 0 
+7ff084991000-7ff088000000 ---p 00000000 00:00 0 
+7ff088000000-7ff0888cb000 rw-p 00000000 00:00 0 
+7ff0888cb000-7ff08c000000 ---p 00000000 00:00 0 
+7ff08c000000-7ff08c021000 rw-p 00000000 00:00 0 
+7ff08c021000-7ff090000000 ---p 00000000 00:00 0 
+7ff090000000-7ff090969000 rw-p 00000000 00:00 0 
+7ff090969000-7ff094000000 ---p 00000000 00:00 0 
+7ff094000000-7ff094021000 rw-p 00000000 00:00 0 
+7ff094021000-7ff098000000 ---p 00000000 00:00 0 
+7ff098000000-7ff098021000 rw-p 00000000 00:00 0 
+7ff098021000-7ff09c000000 ---p 00000000 00:00 0 
+7ff09c000000-7ff09c021000 rw-p 00000000 00:00 0 
+7ff09c021000-7ff0a0000000 ---p 00000000 00:00 0 
+7ff0a0000000-7ff0a0021000 rw-p 00000000 00:00 0 
+7ff0a0021000-7ff0a4000000 ---p 00000000 00:00 0 
+7ff0a4000000-7ff0a4021000 rw-p 00000000 00:00 0 
+7ff0a4021000-7ff0a8000000 ---p 00000000 00:00 0 
+7ff0a8000000-7ff0a8021000 rw-p 00000000 00:00 0 
+7ff0a8021000-7ff0ac000000 ---p 00000000 00:00 0 
+7ff0ac000000-7ff0ac021000 rw-p 00000000 00:00 0 
+7ff0ac021000-7ff0b0000000 ---p 00000000 00:00 0 
+7ff0b0000000-7ff0b0002000 r--s 00000000 00:21 15340                      /usr/lib/fontconfig/cache/d3379abda271c4acd2ad0c01f565d0b0-le64.cache-7
+7ff0b0002000-7ff0b0003000 r--s 00000000 00:21 10694                      /home/ricardoschao/.cache/fontconfig/b14e78aa9400ae7a28193faee1d62280-le64.cache-7
+7ff0b001a000-7ff0b001d000 r--s 0001a000 00:21 8513641                    /opt/pdfstudioviewer2020/jre/lib/jce.jar
+7ff0b001d000-7ff0b0030000 r--s 00345000 00:21 8513711                    /opt/pdfstudioviewer2020/jre/lib/resources.jar
+7ff0b0030000-7ff0b0036000 r--s 00000000 00:21 15311                      /usr/lib/fontconfig/cache/221930ae9526a9cb8049af2916f03412-le64.cache-7
+7ff0b0036000-7ff0b003b000 r--s 00000000 00:21 10692                      /home/ricardoschao/.cache/fontconfig/6ba42ae0000f58711b5caaf10d690066-le64.cache-7
+7ff0b003b000-7ff0b003c000 r--s 00000000 00:21 15312                      /usr/lib/fontconfig/cache/22f06f3be2d16d058da85b73ae1dc5b1-le64.cache-7
+7ff0b003c000-7ff0b003d000 r--s 00000000 00:21 15327                      /usr/lib/fontconfig/cache/7ee6df7a8311986241317a58487e0145-le64.cache-7
+7ff0b003d000-7ff0b0040000 r--s 00000000 00:21 15319                      /usr/lib/fontconfig/cache/427eb62078a821f08aa6ed364f2467bf-le64.cache-7
+7ff0b0040000-7ff0b0047000 r--s 00000000 00:21 15310                      /usr/lib/fontconfig/cache/210c0516121708a580e22e6b1f9a103a-le64.cache-7
+7ff0b0047000-7ff0b0049000 r--s 00000000 00:21 15335                      /usr/lib/fontconfig/cache/b3043b29744cf0a429678d296f5e4026-le64.cache-7
+7ff0b0049000-7ff0b004a000 r--s 00003000 00:21 8513904                    /opt/pdfstudioviewer2020/lib/lnf/flatlaf-jide-oss-0.42.jar
+7ff0b004a000-7ff0b0051000 r--s 00060000 00:21 8513903                    /opt/pdfstudioviewer2020/lib/lnf/flatlaf-0.42.jar
+7ff0b0051000-7ff0b0052000 r--s 00000000 00:21 8513899                    /opt/pdfstudioviewer2020/lib/jxbrowser/license.jar
+7ff0b0052000-7ff0b0073000 r--s 000f6000 00:21 8513898                    /opt/pdfstudioviewer2020/lib/jxbrowser/jxbrowser.jar
+7ff0b0073000-7ff0b0074000 r--s 03864000 00:21 8513897                    /opt/pdfstudioviewer2020/lib/jxbrowser/jxbrowser-linux64.jar
+7ff0b0074000-7ff0b0077000 r--s 0000b000 00:21 8513851                    /opt/pdfstudioviewer2020/lib/docusign/org.apache.oltu.oauth2.common-1.0.2.jar
+7ff0b0077000-7ff0b007a000 r--s 00011000 00:21 8513850                    /opt/pdfstudioviewer2020/lib/docusign/org.apache.oltu.oauth2.client-1.0.2.jar
+7ff0b007a000-7ff0b007c000 r--s 00001000 00:21 8513849                    /opt/pdfstudioviewer2020/lib/docusign/migbase64-2.2.jar
+7ff0b007c000-7ff0b007e000 r--s 0000a000 00:21 8513848                    /opt/pdfstudioviewer2020/lib/docusign/jsr311-api-1.1.1.jar
+7ff0b007e000-7ff0b008f000 r--s 00089000 00:21 8513847                    /opt/pdfstudioviewer2020/lib/docusign/joda-time-2.9.3.jar
+7ff0b008f000-7ff0b0092000 r--s 0000b000 00:21 8513846                    /opt/pdfstudioviewer2020/lib/docusign/jersey-multipart-1.19.1.jar
+7ff0b0092000-7ff0b009c000 r--s 00061000 00:21 8513845                    /opt/pdfstudioviewer2020/lib/docusign/jersey-core-1.19.1.jar
+7ff0b009c000-7ff0b009f000 r--s 0001e000 00:21 8513844                    /opt/pdfstudioviewer2020/lib/docusign/jersey-client-1.19.1.jar
+7ff0b009f000-7ff0b00a1000 r--s 0000b000 00:21 8513843                    /opt/pdfstudioviewer2020/lib/docusign/java-jwt-3.2.0.jar
+7ff0b00a1000-7ff0b00a3000 r--s 00003000 00:21 8513842                    /opt/pdfstudioviewer2020/lib/docusign/jackson-jaxrs-json-provider.jar
+7ff0b00a3000-7ff0b00a5000 r--s 00006000 00:21 8513841                    /opt/pdfstudioviewer2020/lib/docusign/jackson-jaxrs-base.jar
+7ff0b00a5000-7ff0b00a7000 r--s 00007000 00:21 8513840                    /opt/pdfstudioviewer2020/lib/docusign/jackson-datatype-joda-2.1.5.jar
+7ff0b00a7000-7ff0b00b8000 r--s 0010c000 00:21 8513839                    /opt/pdfstudioviewer2020/lib/docusign/jackson-databind.jar
+7ff0b00b8000-7ff0b00bb000 r--s 00009000 00:21 8513838                    /opt/pdfstudioviewer2020/lib/docusign/jackson-annotations.jar
+7ff0b00bb000-7ff0b00c0000 r--s 0004e000 00:21 8513837                    /opt/pdfstudioviewer2020/lib/docusign/grizzly-http.jar
+7ff0b00c0000-7ff0b00c6000 r--s 00041000 00:21 8513836                    /opt/pdfstudioviewer2020/lib/docusign/grizzly-http-server.jar
+7ff0b00c6000-7ff0b00d7000 r--s 000ca000 00:21 8513834                    /opt/pdfstudioviewer2020/lib/docusign/grizzly-framework.jar
+7ff0b00d7000-7ff0b017c000 r--s 00571000 00:21 8513909                    /opt/pdfstudioviewer2020/lib/onedrive/onedrivesdk-0.0.4.jar
+7ff0b017c000-7ff0b01a9000 r--s 0022e000 00:21 8513855                    /opt/pdfstudioviewer2020/lib/dropbox/dropbox-core-sdk-3.0.3.jar
+7ff0b01a9000-7ff0b01ab000 r--s 0001f000 00:21 8513872                    /opt/pdfstudioviewer2020/lib/googledrive/servlet-api-2.5-20081211.jar
+7ff0b01ab000-7ff0b01ad000 r--s 00003000 00:21 8513871                    /opt/pdfstudioviewer2020/lib/googledrive/jsr305-3.0.2.jar
+7ff0b01ad000-7ff0b01b1000 r--s 00028000 00:21 8513870                    /opt/pdfstudioviewer2020/lib/googledrive/jetty-util-6.1.26.jar
+7ff0b01b1000-7ff0b01b8000 r--s 0007d000 00:21 8513869                    /opt/pdfstudioviewer2020/lib/googledrive/jetty-6.1.26.jar
+7ff0b01b8000-7ff0b01bd000 r--s 0004b000 00:21 8513868                    /opt/pdfstudioviewer2020/lib/googledrive/jackson-core-2.9.6.jar
+7ff0b01bd000-7ff0b01bf000 r--s 00001000 00:21 8513867                    /opt/pdfstudioviewer2020/lib/googledrive/j2objc-annotations-1.1.jar
+7ff0b01bf000-7ff0b01c6000 r--s 00049000 00:21 8513866                    /opt/pdfstudioviewer2020/lib/googledrive/httpcore-4.4.9.jar
+7ff0b01c6000-7ff0b01d4000 r--s 000ae000 00:21 8513865                    /opt/pdfstudioviewer2020/lib/googledrive/httpclient-4.5.5.jar
+7ff0b01d4000-7ff0b0203000 r--s 00226000 00:21 8513864                    /opt/pdfstudioviewer2020/lib/googledrive/guava-20.0.jar
+7ff0b0203000-7ff0b0206000 r--s 0000d000 00:21 8513861                    /opt/pdfstudioviewer2020/lib/googledrive/google-oauth-client-1.25.0.jar
+7ff0b0206000-7ff0b0210000 r--s 00056000 00:21 8513859                    /opt/pdfstudioviewer2020/lib/googledrive/google-http-client-1.25.0.jar
+7ff0b0210000-7ff0b0213000 r--s 0001a000 00:21 8513858                    /opt/pdfstudioviewer2020/lib/googledrive/google-api-services-drive-v3-rev110-1.23.0.jar
+7ff0b0213000-7ff0b0218000 r--s 0002d000 00:21 8513857                    /opt/pdfstudioviewer2020/lib/googledrive/google-api-client-1.25.0.jar
+7ff0b0218000-7ff0b0220000 r--s 00028000 00:21 8513920                    /opt/pdfstudioviewer2020/lib/ribbon/xml-apis.jar
+7ff0b0220000-7ff0b0225000 r--s 00010000 00:21 8513919                    /opt/pdfstudioviewer2020/lib/ribbon/xml-apis-ext.jar
+7ff0b0225000-7ff0b0228000 r--s 00011000 00:21 8513918                    /opt/pdfstudioviewer2020/lib/ribbon/trident-1.4.jar
+7ff0b0228000-7ff0b023d000 r--s 001ac000 00:21 8513917                    /opt/pdfstudioviewer2020/lib/ribbon/svnkit.jar
+7ff0b023d000-7ff0b0240000 r--s 00018000 00:21 8513916                    /opt/pdfstudioviewer2020/lib/ribbon/forms-1.2.0.jar
+7ff0b0240000-7ff0b028c000 r--s 002dd000 00:21 8513915                    /opt/pdfstudioviewer2020/lib/ribbon/batik-all.jar
+7ff0b028c000-7ff0b02c6000 r--s 0023c000 00:21 8513929                    /opt/pdfstudioviewer2020/lib/xbean.jar
+7ff0b02c6000-7ff0b0393000 r--s 00cce000 00:21 8513911                    /opt/pdfstudioviewer2020/lib/pdfstudio.jar
+7ff0b0393000-7ff0b03e1000 r--s 002cf000 00:21 8513910                    /opt/pdfstudioviewer2020/lib/ooxml-schemas-lite.jar
+7ff0b03e1000-7ff0b0428000 r--s 002fa000 00:21 8513823                    /opt/pdfstudioviewer2020/lib/bcprov-jdk14-154.jar
+7ff0b0428000-7ff0b0431000 r-xp 00000000 00:21 8513445                    /opt/pdfstudioviewer2020/jre/lib/amd64/libmanagement.so
+7ff0b0431000-7ff0b0630000 ---p 00009000 00:21 8513445                    /opt/pdfstudioviewer2020/jre/lib/amd64/libmanagement.so
+7ff0b0630000-7ff0b0631000 r--p 00008000 00:21 8513445                    /opt/pdfstudioviewer2020/jre/lib/amd64/libmanagement.so
+7ff0b0631000-7ff0b0632000 rw-p 00009000 00:21 8513445                    /opt/pdfstudioviewer2020/jre/lib/amd64/libmanagement.so
+7ff0b0632000-7ff0b0635000 ---p 00000000 00:00 0 
+7ff0b0635000-7ff0b0733000 rw-p 00000000 00:00 0 
+7ff0b0733000-7ff0b0736000 ---p 00000000 00:00 0 
+7ff0b0736000-7ff0b0a34000 rw-p 00000000 00:00 0 
+7ff0b0a34000-7ff0b0aa0000 r-xp 00000000 00:21 8513458                    /opt/pdfstudioviewer2020/jre/lib/amd64/libt2k.so
+7ff0b0aa0000-7ff0b0ca0000 ---p 0006c000 00:21 8513458                    /opt/pdfstudioviewer2020/jre/lib/amd64/libt2k.so
+7ff0b0ca0000-7ff0b0ca6000 r--p 0006c000 00:21 8513458                    /opt/pdfstudioviewer2020/jre/lib/amd64/libt2k.so
+7ff0b0ca6000-7ff0b0ca7000 rw-p 00072000 00:21 8513458                    /opt/pdfstudioviewer2020/jre/lib/amd64/libt2k.so
+7ff0b0ca7000-7ff0b0cb8000 r-xp 00000000 00:21 8513448                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnio.so
+7ff0b0cb8000-7ff0b0eb7000 ---p 00011000 00:21 8513448                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnio.so
+7ff0b0eb7000-7ff0b0eb8000 r--p 00010000 00:21 8513448                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnio.so
+7ff0b0eb8000-7ff0b0eb9000 rw-p 00011000 00:21 8513448                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnio.so
+7ff0b0eb9000-7ff0b0ecf000 r-xp 00000000 00:21 8513447                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnet.so
+7ff0b0ecf000-7ff0b10cf000 ---p 00016000 00:21 8513447                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnet.so
+7ff0b10cf000-7ff0b10d0000 r--p 00016000 00:21 8513447                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnet.so
+7ff0b10d0000-7ff0b10d1000 rw-p 00017000 00:21 8513447                    /opt/pdfstudioviewer2020/jre/lib/amd64/libnet.so
+7ff0b10d1000-7ff0b10eb000 r--s 00000000 00:21 123514                     /home/ricardoschao/.cache/fontconfig/123d59b33ddb0e7c76bb24004bd5cfac-le64.cache-7
+7ff0b10eb000-7ff0b10ee000 r--s 0000e000 00:21 8513895                    /opt/pdfstudioviewer2020/lib/jortho/qjortho.jar
+7ff0b10ee000-7ff0b1104000 r--s 001b6000 00:21 8513926                    /opt/pdfstudioviewer2020/lib/swt/gtk-linux-64.jar
+7ff0b1104000-7ff0b1105000 r--s 00000000 00:21 89899                      /home/ricardoschao/.cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-7
+7ff0b1105000-7ff0b1106000 r--s 00003000 00:21 8513852                    /opt/pdfstudioviewer2020/lib/docusign/swagger-annotations-1.5.8.jar
+7ff0b1106000-7ff0b1108000 r--s 00000000 00:21 15318                      /usr/lib/fontconfig/cache/3f821257dd33660ba7bbb45c32deb84c-le64.cache-7
+7ff0b1108000-7ff0b110b000 r--s 00000000 00:21 15308                      /usr/lib/fontconfig/cache/131ab5cc1583381c4f7ce0194912c56d-le64.cache-7
+7ff0b110b000-7ff0b110c000 r--s 00000000 00:21 15313                      /usr/lib/fontconfig/cache/26078b1cf62d7535e9fc9c56a8803883-le64.cache-7
+7ff0b110c000-7ff0b1111000 r--s 00000000 00:21 10696                      /home/ricardoschao/.cache/fontconfig/cfde08ab28ad1d91784abb10973575e3-le64.cache-7
+7ff0b1111000-7ff0b112c000 r--s 00000000 00:21 15341                      /usr/lib/fontconfig/cache/d63f98f14a274bd69a5425fc33aaac6b-le64.cache-7
+7ff0b112c000-7ff0b112d000 r--s 00001000 00:21 8513863                    /opt/pdfstudioviewer2020/lib/googledrive/google-oauth-client-jetty-1.23.0.jar
+7ff0b112d000-7ff0b113c000 r--s 00079000 00:21 8513832                    /opt/pdfstudioviewer2020/lib/dj/swt-swing.jar
+7ff0b113c000-7ff0b113f000 r--s 00019000 00:21 8513831                    /opt/pdfstudioviewer2020/lib/dj/swing.jar
+7ff0b113f000-7ff0b114b000 r--s 000f6000 00:21 8513921                    /opt/pdfstudioviewer2020/lib/rsyntaxtextarea-2.5.7.jar
+7ff0b114b000-7ff0b1168000 r--s 00167000 00:21 8513882                    /opt/pdfstudioviewer2020/lib/jide-oss.jar
+7ff0b1168000-7ff0b11c5000 r-xp 00000000 00:21 8513414                    /opt/pdfstudioviewer2020/jre/lib/amd64/libfontmanager.so
+7ff0b11c5000-7ff0b13c5000 ---p 0005d000 00:21 8513414                    /opt/pdfstudioviewer2020/jre/lib/amd64/libfontmanager.so
+7ff0b13c5000-7ff0b13c8000 r--p 0005d000 00:21 8513414                    /opt/pdfstudioviewer2020/jre/lib/amd64/libfontmanager.so
+7ff0b13c8000-7ff0b13c9000 rw-p 00060000 00:21 8513414                    /opt/pdfstudioviewer2020/jre/lib/amd64/libfontmanager.so
+7ff0b13c9000-7ff0b13cc000 ---p 00000000 00:00 0 
+7ff0b13cc000-7ff0b14ca000 rw-p 00000000 00:00 0 
+7ff0b14ca000-7ff0b14cd000 ---p 00000000 00:00 0 
+7ff0b14cd000-7ff0b15cb000 rw-p 00000000 00:00 0 
+7ff0b15cb000-7ff0b1625000 r-xp 00000000 00:21 8513408                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt_xawt.so
+7ff0b1625000-7ff0b1825000 ---p 0005a000 00:21 8513408                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt_xawt.so
+7ff0b1825000-7ff0b1826000 r--p 0005a000 00:21 8513408                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt_xawt.so
+7ff0b1826000-7ff0b1829000 rw-p 0005b000 00:21 8513408                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt_xawt.so
+7ff0b1829000-7ff0b182b000 rw-p 00000000 00:00 0 
+7ff0b182b000-7ff0b18cb000 r-xp 00000000 00:21 8513406                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt.so
+7ff0b18cb000-7ff0b1aca000 ---p 000a0000 00:21 8513406                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt.so
+7ff0b1aca000-7ff0b1acb000 r--p 0009f000 00:21 8513406                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt.so
+7ff0b1acb000-7ff0b1ad6000 rw-p 000a0000 00:21 8513406                    /opt/pdfstudioviewer2020/jre/lib/amd64/libawt.so
+7ff0b1ad6000-7ff0b1afb000 rw-p 00000000 00:00 0 
+7ff0b1afb000-7ff0b1afc000 ---p 00000000 00:00 0 
+7ff0b1afc000-7ff0b1bfc000 rw-p 00000000 00:00 0 
+7ff0b1bfc000-7ff0b1bff000 ---p 00000000 00:00 0 
+7ff0b1bff000-7ff0b1cfd000 rw-p 00000000 00:00 0 
+7ff0b1cfd000-7ff0b1cfe000 ---p 00000000 00:00 0 
+7ff0b1cfe000-7ff0b1d01000 ---p 00000000 00:00 0 
+7ff0b1d01000-7ff0b1dfe000 rw-p 00000000 00:00 0 
+7ff0b1dfe000-7ff0b1dff000 ---p 00000000 00:00 0 
+7ff0b1dff000-7ff0b1e02000 ---p 00000000 00:00 0 
+7ff0b1e02000-7ff0b1eff000 rw-p 00000000 00:00 0 
+7ff0b1eff000-7ff0b1f00000 ---p 00000000 00:00 0 
+7ff0b1f00000-7ff0b1f03000 ---p 00000000 00:00 0 
+7ff0b1f03000-7ff0b4000000 rw-p 00000000 00:00 0 
+7ff0b4000000-7ff0b4021000 rw-p 00000000 00:00 0 
+7ff0b4021000-7ff0b8000000 ---p 00000000 00:00 0 
+7ff0b8000000-7ff0b8021000 rw-p 00000000 00:00 0 
+7ff0b8021000-7ff0bc000000 ---p 00000000 00:00 0 
+7ff0bc000000-7ff0bc021000 rw-p 00000000 00:00 0 
+7ff0bc021000-7ff0c0000000 ---p 00000000 00:00 0 
+7ff0c0000000-7ff0c0021000 rw-p 00000000 00:00 0 
+7ff0c0021000-7ff0c4000000 ---p 00000000 00:00 0 
+7ff0c4000000-7ff0c4021000 rw-p 00000000 00:00 0 
+7ff0c4021000-7ff0c8000000 ---p 00000000 00:00 0 
+7ff0c8000000-7ff0c8021000 rw-p 00000000 00:00 0 
+7ff0c8021000-7ff0cc000000 ---p 00000000 00:00 0 
+7ff0cc000000-7ff0cc021000 rw-p 00000000 00:00 0 
+7ff0cc021000-7ff0d0000000 ---p 00000000 00:00 0 
+7ff0d0000000-7ff0d0001000 r--s 00000000 00:21 10698                      /home/ricardoschao/.cache/fontconfig/f951a6bc01c50d58ac4af16a0108457e-le64.cache-7
+7ff0d0001000-7ff0d0002000 r--s 00000000 00:21 15333                      /usr/lib/fontconfig/cache/ac68f755438cc3dc5a526084839fc7ca-le64.cache-7
+7ff0d0002000-7ff0d0003000 r--s 00000000 00:21 15330                      /usr/lib/fontconfig/cache/8cab66d8f642305e525ba3e322d0979c-le64.cache-7
+7ff0d0003000-7ff0d0004000 r--s 00000000 00:21 15323                      /usr/lib/fontconfig/cache/6b4d77390f008fe4d7fb61c915674aee-le64.cache-7
+7ff0d0004000-7ff0d0008000 r--s 00000000 00:21 15337                      /usr/lib/fontconfig/cache/bf4088b6c6290c8d6936483b844e6a40-le64.cache-7
+7ff0d0008000-7ff0d0009000 r--s 00000000 00:21 15344                      /usr/lib/fontconfig/cache/f132fa2327207a6ac3298c0518879731-le64.cache-7
+7ff0d0009000-7ff0d000a000 r--s 00000000 00:21 15336                      /usr/lib/fontconfig/cache/b887eea8f1b96e1d899b44ed6681fc27-le64.cache-7
+7ff0d000a000-7ff0d000b000 r--s 00000000 00:21 15328                      /usr/lib/fontconfig/cache/860639f272b8b4b3094f9e399e41bccd-le64.cache-7
+7ff0d000b000-7ff0d0021000 r--s 00000000 00:21 15329                      /usr/lib/fontconfig/cache/8810ee51c158c7bfaed726592ffe4eb9-le64.cache-7
+7ff0d0021000-7ff0d0022000 ---p 00000000 00:00 0 
+7ff0d0022000-7ff0d0025000 ---p 00000000 00:00 0 
+7ff0d0025000-7ff0d0122000 rw-p 00000000 00:00 0 
+7ff0d0122000-7ff0d0125000 ---p 00000000 00:00 0 
+7ff0d0125000-7ff0d0223000 rw-p 00000000 00:00 0 
+7ff0d0223000-7ff0d0226000 ---p 00000000 00:00 0 
+7ff0d0226000-7ff0d0324000 rw-p 00000000 00:00 0 
+7ff0d0324000-7ff0d0327000 ---p 00000000 00:00 0 
+7ff0d0327000-7ff0d0425000 rw-p 00000000 00:00 0 
+7ff0d0425000-7ff0d0428000 ---p 00000000 00:00 0 
+7ff0d0428000-7ff0d0526000 rw-p 00000000 00:00 0 
+7ff0d0526000-7ff0d0527000 ---p 00000000 00:00 0 
+7ff0d0527000-7ff0d0627000 rw-p 00000000 00:00 0 
+7ff0d0627000-7ff0d0800000 r--s 03d22000 00:21 8513712                    /opt/pdfstudioviewer2020/jre/lib/rt.jar
+7ff0d0800000-7ff0d1000000 rw-p 00000000 00:00 0 
+7ff0d1000000-7ff0d1de0000 rwxp 00000000 00:00 0 
+7ff0d1de0000-7ff0e0000000 ---p 00000000 00:00 0 
+7ff0e0000000-7ff0e0cb7000 rw-p 00000000 00:00 0 
+7ff0e0cb7000-7ff0e4000000 ---p 00000000 00:00 0 
+7ff0e4000000-7ff0e4021000 rw-p 00000000 00:00 0 
+7ff0e4021000-7ff0e8000000 ---p 00000000 00:00 0 
+7ff0e8000000-7ff0e81a9000 rw-p 00000000 00:00 0 
+7ff0e81a9000-7ff0ec000000 ---p 00000000 00:00 0 
+7ff0ec000000-7ff0ec001000 r--s 00000000 00:21 15322                      /usr/lib/fontconfig/cache/5d33f04e74a97395cf88bbd83847f1f1-le64.cache-7
+7ff0ec001000-7ff0ec002000 r--s 00000000 00:21 15342                      /usr/lib/fontconfig/cache/df893b4576ad6107f9397134092c4059-le64.cache-7
+7ff0ec002000-7ff0ec003000 r--s 00000000 00:21 15331                      /usr/lib/fontconfig/cache/900402270e15d763a6e008bb2d4c7686-le64.cache-7
+7ff0ec003000-7ff0ec004000 r--s 00000000 00:21 15320                      /usr/lib/fontconfig/cache/47f48679023f44a4d1e44699a69464f6-le64.cache-7
+7ff0ec004000-7ff0ec005000 r--s 00000000 00:21 15314                      /usr/lib/fontconfig/cache/2881ed3fd21ca306ddad6f9b0dd3189f-le64.cache-7
+7ff0ec005000-7ff0ec006000 r--s 00000000 00:21 15316                      /usr/lib/fontconfig/cache/3c3fb04d32a5211b073874b125d29701-le64.cache-7
+7ff0ec006000-7ff0ec008000 r--s 00000000 00:21 15317                      /usr/lib/fontconfig/cache/3e9ca894d7ccd8b9fedb236c4f3f7c4e-le64.cache-7
+7ff0ec008000-7ff0ec00a000 r--s 00000000 00:21 15321                      /usr/lib/fontconfig/cache/5535e07303e0edee0923e77e4e59b69c-le64.cache-7
+7ff0ec00a000-7ff0ec012000 r--s 00000000 00:21 15343                      /usr/lib/fontconfig/cache/e34b99a1e22e6f7451938fb9934274e6-le64.cache-7
+7ff0ec012000-7ff0ec013000 r--s 00002000 00:21 8513862                    /opt/pdfstudioviewer2020/lib/googledrive/google-oauth-client-java6-1.23.0.jar
+7ff0ec013000-7ff0ec014000 r--s 00001000 00:21 8513860                    /opt/pdfstudioviewer2020/lib/googledrive/google-http-client-jackson2-1.25.0.jar
+7ff0ec014000-7ff0ec018000 r--s 000dc000 00:21 8513830                    /opt/pdfstudioviewer2020/lib/dj/jna.jar
+7ff0ec018000-7ff0ec025000 r--s 00127000 00:21 8513912                    /opt/pdfstudioviewer2020/lib/rhino.jar
+7ff0ec025000-7ff0ec027000 r--s 00011000 00:21 8513906                    /opt/pdfstudioviewer2020/lib/miglayout.jar
+7ff0ec027000-7ff0ec02e000 r--s 00051000 00:21 8513905                    /opt/pdfstudioviewer2020/lib/mail.jar
+7ff0ec02e000-7ff0ec03f000 r--s 00117000 00:21 8513874                    /opt/pdfstudioviewer2020/lib/jai_imageio.jar
+7ff0ec03f000-7ff0ec043000 r--s 00040000 00:21 8513873                    /opt/pdfstudioviewer2020/lib/jai_codec.jar
+7ff0ec043000-7ff0ec048000 r--s 00048000 00:21 8513853                    /opt/pdfstudioviewer2020/lib/dom4j-2.0.2.jar
+7ff0ec048000-7ff0ec04a000 r--s 0000e000 00:21 8513827                    /opt/pdfstudioviewer2020/lib/commons-logging-1.2.jar
+7ff0ec04a000-7ff0ec04f000 r--s 00036000 00:21 8513826                    /opt/pdfstudioviewer2020/lib/commons-compress-1.4.1.jar
+7ff0ec04f000-7ff0ec056000 r--s 0003f000 00:21 8513825                    /opt/pdfstudioviewer2020/lib/commons-codec-1.10.jar
+7ff0ec056000-7ff0ec058000 r--s 00116000 00:21 8513824                    /opt/pdfstudioviewer2020/lib/cmaps.jar
+7ff0ec058000-7ff0ec069000 r--s 0009d000 00:21 8513822                    /opt/pdfstudioviewer2020/lib/bcpkix-jdk14-154.jar
+7ff0ec069000-7ff0ec06e000 r--s 0002e000 00:21 8513819                    /opt/pdfstudioviewer2020/lib/barcode4j.jar
+7ff0ec06e000-7ff0ec089000 r--s 0038e000 00:21 8513589                    /opt/pdfstudioviewer2020/jre/lib/ext/cldrdata.jar
+7ff0ec089000-7ff0ec08c000 r--p 00000000 00:21 195882                     /usr/lib64/libnss_files-2.32.so
+7ff0ec08c000-7ff0ec093000 r-xp 00003000 00:21 195882                     /usr/lib64/libnss_files-2.32.so
+7ff0ec093000-7ff0ec095000 r--p 0000a000 00:21 195882                     /usr/lib64/libnss_files-2.32.so
+7ff0ec095000-7ff0ec096000 r--p 0000b000 00:21 195882                     /usr/lib64/libnss_files-2.32.so
+7ff0ec096000-7ff0ec09d000 rw-p 00000000 00:00 0 
+7ff0ec09d000-7ff0ec0a0000 r--p 00000000 00:21 194380                     /usr/lib64/libgcc_s-10-20201125.so.1
+7ff0ec0a0000-7ff0ec0b2000 r-xp 00003000 00:21 194380                     /usr/lib64/libgcc_s-10-20201125.so.1
+7ff0ec0b2000-7ff0ec0b6000 r--p 00015000 00:21 194380                     /usr/lib64/libgcc_s-10-20201125.so.1
+7ff0ec0b6000-7ff0ec0b7000 r--p 00018000 00:21 194380                     /usr/lib64/libgcc_s-10-20201125.so.1
+7ff0ec0b7000-7ff0ec0b8000 rw-p 00019000 00:21 194380                     /usr/lib64/libgcc_s-10-20201125.so.1
+7ff0ec0b8000-7ff0ec0bb000 r--s 00004000 00:21 8513818                    /opt/pdfstudioviewer2020/lib/applejavaextensions.jar
+7ff0ec0bb000-7ff0ec0c1000 r--s 0004d000 00:21 8513817                    /opt/pdfstudioviewer2020/lib/Filters.jar
+7ff0ec0c1000-7ff0ec0cc000 r--s 00114000 00:21 8513593                    /opt/pdfstudioviewer2020/jre/lib/ext/localedata.jar
+7ff0ec0cc000-7ff0ec0d1000 r--s 000a0000 00:21 8513648                    /opt/pdfstudioviewer2020/jre/lib/jsse.jar
+7ff0ec0d1000-7ff0ec0d2000 ---p 00000000 00:00 0 
+7ff0ec0d2000-7ff0ec9da000 rw-p 00000000 00:00 0 
+7ff0ec9da000-7ff0ec9db000 ---p 00000000 00:00 0 
+7ff0ec9db000-7ff0ecadb000 rw-p 00000000 00:00 0 
+7ff0ecadb000-7ff0ecadc000 ---p 00000000 00:00 0 
+7ff0ecadc000-7ff0ed6db000 rw-p 00000000 00:00 0 
+7ff0ed6db000-7ff0ed7dd000 ---p 00000000 00:00 0 
+7ff0ed7dd000-7ff0ee00f000 rw-p 00000000 00:00 0 
+7ff0ee00f000-7ff0ee08f000 ---p 00000000 00:00 0 
+7ff0ee08f000-7ff0ee0e3000 rw-p 00000000 00:00 0 
+7ff0ee0e3000-7ff0ee1e5000 ---p 00000000 00:00 0 
+7ff0ee1e5000-7ff0ee1e6000 rw-p 00000000 00:00 0 
+7ff0ee1e6000-7ff0ee1e7000 ---p 00000000 00:00 0 
+7ff0ee1e7000-7ff0ee2e7000 rw-p 00000000 00:00 0 
+7ff0ee2e7000-7ff0ee2e8000 ---p 00000000 00:00 0 
+7ff0ee2e8000-7ff0ee3e8000 rw-p 00000000 00:00 0 
+7ff0ee3e8000-7ff0ee3e9000 ---p 00000000 00:00 0 
+7ff0ee3e9000-7ff0ee4e9000 rw-p 00000000 00:00 0 
+7ff0ee4e9000-7ff0ee4ea000 ---p 00000000 00:00 0 
+7ff0ee4ea000-7ff0ee5ea000 rw-p 00000000 00:00 0 
+7ff0ee5ea000-7ff0ee5eb000 ---p 00000000 00:00 0 
+7ff0ee5eb000-7ff0ee6eb000 rw-p 00000000 00:00 0 
+7ff0ee6eb000-7ff0ee6ec000 ---p 00000000 00:00 0 
+7ff0ee6ec000-7ff0ee7ec000 rw-p 00000000 00:00 0 
+7ff0ee7ec000-7ff0ee7ed000 ---p 00000000 00:00 0 
+7ff0ee7ed000-7ff0ee8ed000 rw-p 00000000 00:00 0 
+7ff0ee8ed000-7ff0ee8ee000 ---p 00000000 00:00 0 
+7ff0ee8ee000-7ff0eea26000 rw-p 00000000 00:00 0 
+7ff0eea26000-7ff0eedae000 ---p 00000000 00:00 0 
+7ff0eedae000-7ff0eedc9000 r-xp 00000000 00:21 8513461                    /opt/pdfstudioviewer2020/jre/lib/amd64/libzip.so
+7ff0eedc9000-7ff0eefc8000 ---p 0001b000 00:21 8513461                    /opt/pdfstudioviewer2020/jre/lib/amd64/libzip.so
+7ff0eefc8000-7ff0eefc9000 r--p 0001a000 00:21 8513461                    /opt/pdfstudioviewer2020/jre/lib/amd64/libzip.so
+7ff0eefc9000-7ff0eefca000 rw-p 0001b000 00:21 8513461                    /opt/pdfstudioviewer2020/jre/lib/amd64/libzip.so
+7ff0eefca000-7ff0ef89e000 r--s 00000000 00:21 8505874                    /var/lib/sss/mc/passwd
+7ff0ef89e000-7ff0ef8ca000 r-xp 00000000 00:21 8513427                    /opt/pdfstudioviewer2020/jre/lib/amd64/libjava.so
+7ff0ef8ca000-7ff0efac9000 ---p 0002c000 00:21 8513427                    /opt/pdfstudioviewer2020/jre/lib/amd64/libjava.so
+7ff0efac9000-7ff0efaca000 r--p 0002b000 00:21 8513427                    /opt/pdfstudioviewer2020/jre/lib/amd64/libjava.so
+7ff0efaca000-7ff0efacc000 rw-p 0002c000 00:21 8513427                    /opt/pdfstudioviewer2020/jre/lib/amd64/libjava.so
+7ff0efacc000-7ff0efad9000 r-xp 00000000 00:21 8513460                    /opt/pdfstudioviewer2020/jre/lib/amd64/libverify.so
+7ff0efad9000-7ff0efcd8000 ---p 0000d000 00:21 8513460                    /opt/pdfstudioviewer2020/jre/lib/amd64/libverify.so
+7ff0efcd8000-7ff0efcda000 r--p 0000c000 00:21 8513460                    /opt/pdfstudioviewer2020/jre/lib/amd64/libverify.so
+7ff0efcda000-7ff0efcdb000 rw-p 0000e000 00:21 8513460                    /opt/pdfstudioviewer2020/jre/lib/amd64/libverify.so
+7ff0efcdb000-7ff0efcdc000 ---p 00000000 00:00 0 
+7ff0efcdc000-7ff0efcdf000 ---p 00000000 00:00 0 
+7ff0efcdf000-7ff0efddc000 rw-p 00000000 00:00 0 
+7ff0efddc000-7ff0fd30c000 r--p 00000000 00:21 195605                     /usr/lib/locale/locale-archive
+7ff0fd30c000-7ff0fd30d000 ---p 00000000 00:00 0 
+7ff0fd30d000-7ff0fdb0d000 rw-p 00000000 00:00 0 
+7ff0fdb5d000-7ff0fdb63000 r--p 00000000 00:21 224732                     /usr/lib64/libnss_resolve.so.2
+7ff0fdb63000-7ff0fdb95000 r-xp 00006000 00:21 224732                     /usr/lib64/libnss_resolve.so.2
+7ff0fdb95000-7ff0fdba6000 r--p 00038000 00:21 224732                     /usr/lib64/libnss_resolve.so.2
+7ff0fdba6000-7ff0fdba7000 ---p 00049000 00:21 224732                     /usr/lib64/libnss_resolve.so.2
+7ff0fdba7000-7ff0fdbaa000 r--p 00049000 00:21 224732                     /usr/lib64/libnss_resolve.so.2
+7ff0fdbaa000-7ff0fdbab000 rw-p 0004c000 00:21 224732                     /usr/lib64/libnss_resolve.so.2
+7ff0fdbab000-7ff0fdbac000 rw-p 00000000 00:00 0 
+7ff0fdbac000-7ff0fdbb0000 r--p 00000000 00:21 195886                     /usr/lib64/libresolv-2.32.so
+7ff0fdbb0000-7ff0fdbbe000 r-xp 00004000 00:21 195886                     /usr/lib64/libresolv-2.32.so
+7ff0fdbbe000-7ff0fdbc1000 r--p 00012000 00:21 195886                     /usr/lib64/libresolv-2.32.so
+7ff0fdbc1000-7ff0fdbc2000 ---p 00015000 00:21 195886                     /usr/lib64/libresolv-2.32.so
+7ff0fdbc2000-7ff0fdbc3000 r--p 00015000 00:21 195886                     /usr/lib64/libresolv-2.32.so
+7ff0fdbc3000-7ff0fdbc4000 rw-p 00016000 00:21 195886                     /usr/lib64/libresolv-2.32.so
+7ff0fdbc4000-7ff0fdbc6000 rw-p 00000000 00:00 0 
+7ff0fdbc6000-7ff0fdbc7000 r--p 00000000 00:21 29720                      /usr/lib64/libnss_mdns4_minimal.so.2
+7ff0fdbc7000-7ff0fdbc9000 r-xp 00001000 00:21 29720                      /usr/lib64/libnss_mdns4_minimal.so.2
+7ff0fdbc9000-7ff0fdbca000 r--p 00003000 00:21 29720                      /usr/lib64/libnss_mdns4_minimal.so.2
+7ff0fdbca000-7ff0fdbcb000 r--p 00003000 00:21 29720                      /usr/lib64/libnss_mdns4_minimal.so.2
+7ff0fdbcb000-7ff0fdbcc000 rw-p 00000000 00:00 0 
+7ff0fdbe5000-7ff0fdbeb000 r--s 0003f000 00:21 8513597                    /opt/pdfstudioviewer2020/jre/lib/ext/sunjce_provider.jar
+7ff0fdbeb000-7ff0fdbed000 r--s 00009000 00:21 8513596                    /opt/pdfstudioviewer2020/jre/lib/ext/sunec.jar
+7ff0fdbed000-7ff0fdbf6000 r--s 00000000 00:21 15325                      /usr/lib/fontconfig/cache/6ee3103884cce7b2fe6f32eba9089175-le64.cache-7
+7ff0fdbf6000-7ff0fdbf8000 r--p 00000000 00:21 29116                      /usr/lib64/libXi.so.6.1.0
+7ff0fdbf8000-7ff0fdc03000 r-xp 00002000 00:21 29116                      /usr/lib64/libXi.so.6.1.0
+7ff0fdc03000-7ff0fdc06000 r--p 0000d000 00:21 29116                      /usr/lib64/libXi.so.6.1.0
+7ff0fdc06000-7ff0fdc07000 r--p 0000f000 00:21 29116                      /usr/lib64/libXi.so.6.1.0
+7ff0fdc07000-7ff0fdc08000 rw-p 00010000 00:21 29116                      /usr/lib64/libXi.so.6.1.0
+7ff0fdc08000-7ff0fdc0a000 r--s 00000000 00:21 15338                      /usr/lib/fontconfig/cache/cf759820c416606818fc74e5e9991313-le64.cache-7
+7ff0fdc0a000-7ff0fdc0c000 r--s 00000000 00:21 15340                      /usr/lib/fontconfig/cache/d3379abda271c4acd2ad0c01f565d0b0-le64.cache-7
+7ff0fdc0c000-7ff0fdc11000 r--s 00000000 00:21 15326                      /usr/lib/fontconfig/cache/7bbebb41f246c24642924bd8585d5345-le64.cache-7
+7ff0fdc11000-7ff0fdc17000 r--s 00000000 00:21 15311                      /usr/lib/fontconfig/cache/221930ae9526a9cb8049af2916f03412-le64.cache-7
+7ff0fdc17000-7ff0fdc1c000 r--s 00000000 00:21 10692                      /home/ricardoschao/.cache/fontconfig/6ba42ae0000f58711b5caaf10d690066-le64.cache-7
+7ff0fdc1c000-7ff0fdc1d000 r--s 00000000 00:21 10694                      /home/ricardoschao/.cache/fontconfig/b14e78aa9400ae7a28193faee1d62280-le64.cache-7
+7ff0fdc1d000-7ff0fdc1e000 r--s 00000000 00:21 15312                      /usr/lib/fontconfig/cache/22f06f3be2d16d058da85b73ae1dc5b1-le64.cache-7
+7ff0fdc1e000-7ff0fdc21000 r--s 00000000 00:21 15319                      /usr/lib/fontconfig/cache/427eb62078a821f08aa6ed364f2467bf-le64.cache-7
+7ff0fdc21000-7ff0fdc5b000 r--s 001e1000 00:21 8513937                    /opt/pdfstudioviewer2020/.install4j/i4jruntime.jar
+7ff0fdc5b000-7ff0fdc86000 rw-p 00000000 00:00 0 
+7ff0fdc86000-7ff0fdc88000 r--p 00000000 00:21 275519                     /usr/lib64/libnss_sss.so.2
+7ff0fdc88000-7ff0fdc8f000 r-xp 00002000 00:21 275519                     /usr/lib64/libnss_sss.so.2
+7ff0fdc8f000-7ff0fdc91000 r--p 00009000 00:21 275519                     /usr/lib64/libnss_sss.so.2
+7ff0fdc91000-7ff0fdc92000 r--p 0000a000 00:21 275519                     /usr/lib64/libnss_sss.so.2
+7ff0fdc92000-7ff0fdc93000 rw-p 0000b000 00:21 275519                     /usr/lib64/libnss_sss.so.2
+7ff0fdc93000-7ff0fdc96000 r--p 00000000 00:21 195888                     /usr/lib64/librt-2.32.so
+7ff0fdc96000-7ff0fdc9a000 r-xp 00003000 00:21 195888                     /usr/lib64/librt-2.32.so
+7ff0fdc9a000-7ff0fdc9c000 r--p 00007000 00:21 195888                     /usr/lib64/librt-2.32.so
+7ff0fdc9c000-7ff0fdc9d000 r--p 00008000 00:21 195888                     /usr/lib64/librt-2.32.so
+7ff0fdc9d000-7ff0fdc9e000 rw-p 00009000 00:21 195888                     /usr/lib64/librt-2.32.so
+7ff0fdc9e000-7ff0fdca0000 r--p 00000000 00:21 29113                      /usr/lib64/libXfixes.so.3.1.0
+7ff0fdca0000-7ff0fdca3000 r-xp 00002000 00:21 29113                      /usr/lib64/libXfixes.so.3.1.0
+7ff0fdca3000-7ff0fdca4000 r--p 00005000 00:21 29113                      /usr/lib64/libXfixes.so.3.1.0
+7ff0fdca4000-7ff0fdca5000 ---p 00006000 00:21 29113                      /usr/lib64/libXfixes.so.3.1.0
+7ff0fdca5000-7ff0fdca6000 r--p 00006000 00:21 29113                      /usr/lib64/libXfixes.so.3.1.0
+7ff0fdca6000-7ff0fdca7000 rw-p 00007000 00:21 29113                      /usr/lib64/libXfixes.so.3.1.0
+7ff0fdca7000-7ff0fdca9000 r--p 00000000 00:21 29122                      /usr/lib64/libXrender.so.1.3.0
+7ff0fdca9000-7ff0fdcb0000 r-xp 00002000 00:21 29122                      /usr/lib64/libXrender.so.1.3.0
+7ff0fdcb0000-7ff0fdcb2000 r--p 00009000 00:21 29122                      /usr/lib64/libXrender.so.1.3.0
+7ff0fdcb2000-7ff0fdcb3000 r--p 0000a000 00:21 29122                      /usr/lib64/libXrender.so.1.3.0
+7ff0fdcb3000-7ff0fdcb4000 rw-p 0000b000 00:21 29122                      /usr/lib64/libXrender.so.1.3.0
+7ff0fdcb4000-7ff0fdcb5000 r--s 00000000 00:21 15327                      /usr/lib/fontconfig/cache/7ee6df7a8311986241317a58487e0145-le64.cache-7
+7ff0fdcb5000-7ff0fdcbc000 r--s 00000000 00:21 15310                      /usr/lib/fontconfig/cache/210c0516121708a580e22e6b1f9a103a-le64.cache-7
+7ff0fdcbc000-7ff0fdcbe000 r--p 00000000 00:21 29125                      /usr/lib64/libXtst.so.6.1.0
+7ff0fdcbe000-7ff0fdcc1000 r-xp 00002000 00:21 29125                      /usr/lib64/libXtst.so.6.1.0
+7ff0fdcc1000-7ff0fdcc2000 r--p 00005000 00:21 29125                      /usr/lib64/libXtst.so.6.1.0
+7ff0fdcc2000-7ff0fdcc3000 ---p 00006000 00:21 29125                      /usr/lib64/libXtst.so.6.1.0
+7ff0fdcc3000-7ff0fdcc4000 r--p 00006000 00:21 29125                      /usr/lib64/libXtst.so.6.1.0
+7ff0fdcc4000-7ff0fdcc5000 rw-p 00007000 00:21 29125                      /usr/lib64/libXtst.so.6.1.0
+7ff0fdcc5000-7ff0fdccd000 rw-s 00000000 00:29 363                        /tmp/hsperfdata_ricardoschao/4991
+7ff0fdccd000-7ff0fdcce000 r--p 00000000 00:21 29106                      /usr/lib64/libXau.so.6.0.0
+7ff0fdcce000-7ff0fdccf000 r-xp 00001000 00:21 29106                      /usr/lib64/libXau.so.6.0.0
+7ff0fdccf000-7ff0fdcd0000 r--p 00002000 00:21 29106                      /usr/lib64/libXau.so.6.0.0
+7ff0fdcd0000-7ff0fdcd1000 r--p 00002000 00:21 29106                      /usr/lib64/libXau.so.6.0.0
+7ff0fdcd1000-7ff0fdcd2000 rw-p 00000000 00:00 0 
+7ff0fdcd2000-7ff0fdcde000 r--p 00000000 00:21 30079                      /usr/lib64/libxcb.so.1.1.0
+7ff0fdcde000-7ff0fdcf1000 r-xp 0000c000 00:21 30079                      /usr/lib64/libxcb.so.1.1.0
+7ff0fdcf1000-7ff0fdcfa000 r--p 0001f000 00:21 30079                      /usr/lib64/libxcb.so.1.1.0
+7ff0fdcfa000-7ff0fdcfb000 r--p 00027000 00:21 30079                      /usr/lib64/libxcb.so.1.1.0
+7ff0fdcfb000-7ff0fdcfc000 rw-p 00028000 00:21 30079                      /usr/lib64/libxcb.so.1.1.0
+7ff0fdcfc000-7ff0fdd00000 r--p 00000000 00:21 29112                      /usr/lib64/libXext.so.6.4.0
+7ff0fdd00000-7ff0fdd0b000 r-xp 00004000 00:21 29112                      /usr/lib64/libXext.so.6.4.0
+7ff0fdd0b000-7ff0fdd0f000 r--p 0000f000 00:21 29112                      /usr/lib64/libXext.so.6.4.0
+7ff0fdd0f000-7ff0fdd10000 r--p 00012000 00:21 29112                      /usr/lib64/libXext.so.6.4.0
+7ff0fdd10000-7ff0fdd11000 rw-p 00013000 00:21 29112                      /usr/lib64/libXext.so.6.4.0
+7ff0fdd11000-7ff0fdd2d000 r--p 00000000 00:21 223247                     /usr/lib64/libX11.so.6.3.0
+7ff0fdd2d000-7ff0fddbd000 r-xp 0001c000 00:21 223247                     /usr/lib64/libX11.so.6.3.0
+7ff0fddbd000-7ff0fde50000 r--p 000ac000 00:21 223247                     /usr/lib64/libX11.so.6.3.0
+7ff0fde50000-7ff0fde51000 ---p 0013f000 00:21 223247                     /usr/lib64/libX11.so.6.3.0
+7ff0fde51000-7ff0fde54000 r--p 0013f000 00:21 223247                     /usr/lib64/libX11.so.6.3.0
+7ff0fde54000-7ff0fde58000 rw-p 00142000 00:21 223247                     /usr/lib64/libX11.so.6.3.0
+7ff0fde58000-7ff0fdeb8000 r-xp 00000000 00:21 8513456                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsplashscreen.so
+7ff0fdeb8000-7ff0fe0b7000 ---p 00060000 00:21 8513456                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsplashscreen.so
+7ff0fe0b7000-7ff0fe0b8000 r--p 0005f000 00:21 8513456                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsplashscreen.so
+7ff0fe0b8000-7ff0fe0b9000 rw-p 00060000 00:21 8513456                    /opt/pdfstudioviewer2020/jre/lib/amd64/libsplashscreen.so
+7ff0fe0b9000-7ff0fe0bc000 rw-p 00000000 00:00 0 
+7ff0fe0bc000-7ff0fe0cb000 r--p 00000000 00:21 195874                     /usr/lib64/libm-2.32.so
+7ff0fe0cb000-7ff0fe167000 r-xp 0000f000 00:21 195874                     /usr/lib64/libm-2.32.so
+7ff0fe167000-7ff0fe200000 r--p 000ab000 00:21 195874                     /usr/lib64/libm-2.32.so
+7ff0fe200000-7ff0fe201000 r--p 00143000 00:21 195874                     /usr/lib64/libm-2.32.so
+7ff0fe201000-7ff0fe202000 rw-p 00144000 00:21 195874                     /usr/lib64/libm-2.32.so
+7ff0fe202000-7ff0feeea000 r-xp 00000000 00:21 8513465                    /opt/pdfstudioviewer2020/jre/lib/amd64/server/libjvm.so
+7ff0feeea000-7ff0ff0e9000 ---p 00ce8000 00:21 8513465                    /opt/pdfstudioviewer2020/jre/lib/amd64/server/libjvm.so
+7ff0ff0e9000-7ff0ff17f000 r--p 00ce7000 00:21 8513465                    /opt/pdfstudioviewer2020/jre/lib/amd64/server/libjvm.so
+7ff0ff17f000-7ff0ff1b0000 rw-p 00d7d000 00:21 8513465                    /opt/pdfstudioviewer2020/jre/lib/amd64/server/libjvm.so
+7ff0ff1b0000-7ff0ff1ed000 rw-p 00000000 00:00 0 
+7ff0ff1ed000-7ff0ff213000 r--p 00000000 00:21 195870                     /usr/lib64/libc-2.32.so
+7ff0ff213000-7ff0ff362000 r-xp 00026000 00:21 195870                     /usr/lib64/libc-2.32.so
+7ff0ff362000-7ff0ff3ad000 r--p 00175000 00:21 195870                     /usr/lib64/libc-2.32.so
+7ff0ff3ad000-7ff0ff3ae000 ---p 001c0000 00:21 195870                     /usr/lib64/libc-2.32.so
+7ff0ff3ae000-7ff0ff3b1000 r--p 001c0000 00:21 195870                     /usr/lib64/libc-2.32.so
+7ff0ff3b1000-7ff0ff3b4000 rw-p 001c3000 00:21 195870                     /usr/lib64/libc-2.32.so
+7ff0ff3b4000-7ff0ff3b8000 rw-p 00000000 00:00 0 
+7ff0ff3b8000-7ff0ff3ba000 r--p 00000000 00:21 195872                     /usr/lib64/libdl-2.32.so
+7ff0ff3ba000-7ff0ff3bc000 r-xp 00002000 00:21 195872                     /usr/lib64/libdl-2.32.so
+7ff0ff3bc000-7ff0ff3bd000 r--p 00004000 00:21 195872                     /usr/lib64/libdl-2.32.so
+7ff0ff3bd000-7ff0ff3be000 r--p 00004000 00:21 195872                     /usr/lib64/libdl-2.32.so
+7ff0ff3be000-7ff0ff3bf000 rw-p 00000000 00:00 0 
+7ff0ff3bf000-7ff0ff3d6000 r-xp 00000000 00:21 8513397                    /opt/pdfstudioviewer2020/jre/lib/amd64/jli/libjli.so
+7ff0ff3d6000-7ff0ff5d5000 ---p 00017000 00:21 8513397                    /opt/pdfstudioviewer2020/jre/lib/amd64/jli/libjli.so
+7ff0ff5d5000-7ff0ff5d6000 r--p 00016000 00:21 8513397                    /opt/pdfstudioviewer2020/jre/lib/amd64/jli/libjli.so
+7ff0ff5d6000-7ff0ff5d7000 rw-p 00017000 00:21 8513397                    /opt/pdfstudioviewer2020/jre/lib/amd64/jli/libjli.so
+7ff0ff5d7000-7ff0ff5de000 r--p 00000000 00:21 195884                     /usr/lib64/libpthread-2.32.so
+7ff0ff5de000-7ff0ff5ee000 r-xp 00007000 00:21 195884                     /usr/lib64/libpthread-2.32.so
+7ff0ff5ee000-7ff0ff5f3000 r--p 00017000 00:21 195884                     /usr/lib64/libpthread-2.32.so
+7ff0ff5f3000-7ff0ff5f4000 r--p 0001b000 00:21 195884                     /usr/lib64/libpthread-2.32.so
+7ff0ff5f4000-7ff0ff5f5000 rw-p 0001c000 00:21 195884                     /usr/lib64/libpthread-2.32.so
+7ff0ff5f5000-7ff0ff5fb000 rw-p 00000000 00:00 0 
+7ff0ff5fb000-7ff0ff5fd000 r--s 00000000 00:21 15335                      /usr/lib/fontconfig/cache/b3043b29744cf0a429678d296f5e4026-le64.cache-7
+7ff0ff5fd000-7ff0ff5fe000 r--s 00000000 00:21 8513947                    /opt/pdfstudioviewer2020/.install4j/launchere23368d1.jar
+7ff0ff5fe000-7ff0ff5ff000 rw-p 00000000 00:00 0 
+7ff0ff5ff000-7ff0ff600000 r--p 00000000 00:00 0 
+7ff0ff600000-7ff0ff603000 r--p 00000000 00:21 29109                      /usr/lib64/libXcursor.so.1.0.2
+7ff0ff603000-7ff0ff609000 r-xp 00003000 00:21 29109                      /usr/lib64/libXcursor.so.1.0.2
+7ff0ff609000-7ff0ff60b000 r--p 00009000 00:21 29109                      /usr/lib64/libXcursor.so.1.0.2
+7ff0ff60b000-7ff0ff60c000 r--p 0000a000 00:21 29109                      /usr/lib64/libXcursor.so.1.0.2
+7ff0ff60c000-7ff0ff60d000 rw-p 00000000 00:00 0 
+7ff0ff60d000-7ff0ff614000 r--s 00000000 00:21 196441                     /usr/lib64/gconv/gconv-modules.cache
+7ff0ff614000-7ff0ff615000 r--p 00000000 00:21 195863                     /usr/lib64/ld-2.32.so
+7ff0ff615000-7ff0ff636000 r-xp 00001000 00:21 195863                     /usr/lib64/ld-2.32.so
+7ff0ff636000-7ff0ff63f000 r--p 00022000 00:21 195863                     /usr/lib64/ld-2.32.so
+7ff0ff63f000-7ff0ff640000 r--p 0002a000 00:21 195863                     /usr/lib64/ld-2.32.so
+7ff0ff640000-7ff0ff642000 rw-p 0002b000 00:21 195863                     /usr/lib64/ld-2.32.so
+7ffc42064000-7ffc42085000 rw-p 00000000 00:00 0                          [stack]
+7ffc421e6000-7ffc421ea000 r--p 00000000 00:00 0                          [vvar]
+7ffc421ea000-7ffc421ec000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx1024m -Dsun.java2d.pmoffscreen=false -Dsun.java2d.xrender=false -Dqoppa.debug=true -Dqoppa.debug.sane=false -Dqoppa.debug.morena7=false -Dmorena.debug=false -XX:+UseConcMarkSweepGC -XX:+ExplicitGCInvokesConcurrent 
+java_command: install4j.com.qoppa.pdfStudioViewer.pub.PDFStudioViewer /home/ricardoschao/Desktop/Github/LinuxNotes/How to Fix Windows and Linux Showing Different Times When Dual Booting.pdf
+java_class_path (initial): /opt/pdfstudioviewer2020/.install4j/i4jruntime.jar:/opt/pdfstudioviewer2020/.install4j/launchere23368d1.jar:/opt/pdfstudioviewer2020/lib/Filters.jar:/opt/pdfstudioviewer2020/lib/applejavaextensions.jar:/opt/pdfstudioviewer2020/lib/barcode4j.jar:/opt/pdfstudioviewer2020/lib/bcpkix-jdk14-154.jar:/opt/pdfstudioviewer2020/lib/bcprov-jdk14-154.jar:/opt/pdfstudioviewer2020/lib/cmaps.jar:/opt/pdfstudioviewer2020/lib/commons-codec-1.10.jar:/opt/pdfstudioviewer2020/lib/commons-compress-1.4.1.jar:/opt/pdfstudioviewer2020/lib/commons-logging-1.2.jar:/opt/pdfstudioviewer2020/lib/dom4j-2.0.2.jar:/opt/pdfstudioviewer2020/lib/jai_codec.jar:/opt/pdfstudioviewer2020/lib/jai_imageio.jar:/opt/pdfstudioviewer2020/lib/jide-oss.jar:/opt/pdfstudioviewer2020/lib/mail.jar:/opt/pdfstudioviewer2020/lib/miglayout.jar:/opt/pdfstudioviewer2020/lib/ooxml-schemas-lite.jar:/opt/pdfstudioviewer2020/lib/pdfstudio.jar:/opt/pdfstudioviewer2020/lib/rhino.jar:/opt/pdfstudioviewer2020/lib/rsyntaxtextarea-2.5.7.jar:/opt/pdfstudioviewer2020/lib/xbean.jar:/opt/pdfstudioviewer2020/lib/acrobat/*:/opt/pdfstudioviewer2020/lib/jaxb/*:/opt/pdfstudioviewer2020/lib/swt/gtk-linux-64.jar:/opt/pdfstudioviewer2020/lib/dj/jna.jar:/opt/pdfstudioviewer2020/lib/dj/swing.jar:/opt/pdfstudioviewer2020/lib/dj/swt-swing.jar:/opt/pdfstudioviewer2020/.:/opt/pdfstudioviewer2020/lib/jortho/qjortho.jar:/opt/pdfstudioviewer2020/lib/ribbon/batik-all.jar:/opt/pdfstudioviewer2020/lib/ribbon/forms-1.2.0.jar:/opt/pdfstudioviewer2020/lib/ribbon/svnkit.jar:/opt/pdfstudioviewer2020/lib/ribbon/trident-1.4.jar:/opt/pdfstudioviewer2020/lib/ribbon/xml-apis-ext.jar:/opt/pdfstudioviewer2020/lib/ribbon/xml-apis.jar:/opt/pdfstudioviewer2020/lib/googledrive/google-api-client-1.25.0.jar:/opt/pdfstudioviewer2020/lib/googledrive/google-api-services-drive-v3-rev110-1.23.0.jar:/opt/pdfstudioviewer2020/lib/googledrive/google-http-client-1.25.0.jar:/opt/pdfstudioviewer2020/lib/googledrive/google-http-client-jackson2-1.25.0.jar:/o
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/local/bin:/usr/bin:/bin:/home/ricardoschao/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin
+SHELL=/bin/zsh
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xad3ce0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xad3ce0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x90b820], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x90b6f0], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x90bd10], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x90bd10], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x90bd10], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x90bd10], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Fedora release 33 (Thirty Three)
+
+uname:Linux 5.10.10-200.fc33.x86_64 #1 SMP Sun Jan 24 19:58:54 UTC 2021 x86_64
+libc:glibc 2.32 NPTL 2.32 
+rlimit: STACK 8192k, CORE infinity, NPROC 63476, NOFILE 524288, AS infinity
+load average:0.49 0.67 0.82
+
+/proc/meminfo:
+MemTotal:       16292436 kB
+MemFree:         9139356 kB
+MemAvailable:   14029992 kB
+Buffers:         1546800 kB
+Cached:          4114888 kB
+SwapCached:        14500 kB
+Active:          3018128 kB
+Inactive:        3290012 kB
+Active(anon):     260900 kB
+Inactive(anon):   976924 kB
+Active(file):    2757228 kB
+Inactive(file):  2313088 kB
+Unevictable:      178620 kB
+Mlocked:             104 kB
+SwapTotal:      20971512 kB
+SwapFree:       20571228 kB
+Dirty:              5552 kB
+Writeback:           204 kB
+AnonPages:        793300 kB
+Mapped:           425544 kB
+Shmem:            591740 kB
+KReclaimable:     155880 kB
+Slab:             307656 kB
+SReclaimable:     155880 kB
+SUnreclaim:       151776 kB
+KernelStack:        7776 kB
+PageTables:        23732 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    29117728 kB
+Committed_AS:    5894584 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       93856 kB
+VmallocChunk:          0 kB
+Percpu:             8032 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     1830516 kB
+DirectMap2M:    14854144 kB
+DirectMap1G:           0 kB
+
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2410.178
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2411.655
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2410.121
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2407.653
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2406.932
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2406.070
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2429.143
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+stepping	: 10
+microcode	: 0xe0
+cpu MHz		: 2446.767
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 3600.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 16292436k(9245504k free), swap 20971512k(20581428k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for linux-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 12:40:22 by "java_re" with gcc 7.3.0
+
+time: Fri Jan 29 05:04:10 2021
+timezone: CST
+elapsed time: 40157 seconds (0d 11h 9m 17s)
+
