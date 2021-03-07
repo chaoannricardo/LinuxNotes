@@ -1,0 +1,2 @@
+Default Collation: utf8mb4_unicode_ci
+Default Characterset: utf8mb4
