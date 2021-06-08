@@ -27,6 +27,18 @@
   jupyter kernelspec uninstall XXXX
   ```
 
+
+
+# Jupyter Extension
+
+```shell
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+jupyter nbextension enable varInspector/main
+```
+
+
+
 <br>
 
 # Jupyter Notebook Convert
